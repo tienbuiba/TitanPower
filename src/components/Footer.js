@@ -6,9 +6,27 @@ import Container from '@mui/material/Container';
 import { Button, Typography } from '@mui/material';
 import CopyRight from './CopyRight';
 import Logo from './Logo';
+import { makeStyles } from '@mui/styles';
 
+
+const useStyles = makeStyles(function (theme) {
+  return {
+    link: {
+      '&:hover': {
+        color: '#ff3366'
+      }
+    },
+    linkAppBarSpecial: {
+      '&:hover': {
+        color: '#ffffff'
+      }
+    }
+  }
+})
 
 export default function Footer() {
+  const classes = useStyles();
+
   return (
     <Typography
       component="footer"
@@ -20,7 +38,7 @@ export default function Footer() {
             <Button style={{ width: '30%' }} href="/" sx={{ mb: 1 }}>
               <Logo />
             </Button>
-            <Typography sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>Excelpoint Systems (Pte) Ltd has achieved ISO 9001:2015 certification</Typography>
+            <Typography sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>TitanPower Systems (Pte) Ltd has achieved ISO 9001:2015 certification</Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" marked="left" gutterBottom style={{ fontSize: '16px' }}>
@@ -28,13 +46,13 @@ export default function Footer() {
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/terms/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>Corporate Overview</Link>
+                <Link href="/premium-themes/onepirate/terms/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>Corporate Overview</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>Corporate Governance</Link>
+                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>Corporate Governance</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>Whistle-Blowing Policy</Link>
+                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>Whistle-Blowing Policy</Link>
               </Box>
             </Box>
           </Grid>
@@ -44,13 +62,13 @@ export default function Footer() {
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/terms/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>Information</Link>
+                <Link href="/premium-themes/onepirate/terms/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>Information</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>Contact</Link>
+                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>Contact</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>Products Material Download</Link>
+                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>Products Material Download</Link>
               </Box>
             </Box>
           </Grid>
@@ -60,16 +78,16 @@ export default function Footer() {
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>All Solutions</Link>
+                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>All Solutions</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>IoT | Dev Kit</Link>
+                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>IoT | Dev Kit</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/terms/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>IoT | In-Building</Link>
+                <Link href="/premium-themes/onepirate/terms/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>IoT | In-Building</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }}>IoT | Infrastructure</Link>
+                <Link href="/premium-themes/onepirate/privacy/" sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px' }} className={classes.link}>IoT | Infrastructure</Link>
               </Box>
             </Box>
           </Grid>

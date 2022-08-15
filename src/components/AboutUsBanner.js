@@ -4,15 +4,13 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import { Button,useMediaQuery } from '@mui/material';
-import Background from '../assets/images/banners/banner1.jpg';
+import Background from '../assets/images/aboutUs/image1.jpg';
 
 import { makeStyles } from '@mui/styles';
-import { useTheme } from '@mui/system';
 
 const useStyles = makeStyles(theme => ({
   banner: {
-    height: '470px',
+    height: '400px',
     [theme.breakpoints.down('lg')]: {
       height: '370px',
     }
@@ -36,11 +34,9 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-function MainFeaturedPost(props) {
+function AboutUsBanner(props) {
   const { post } = props;
   const classes = useStyles();
-  const theme =useTheme();
-  const matchDownMD = useMediaQuery(theme.breakpoints.down('md'));
 
 
   return (
@@ -75,15 +71,12 @@ function MainFeaturedPost(props) {
               pr: { md: 0 },
             }}
           >
-            <Typography variant="h4" color="inherit" gutterBottom >
+            <Typography variant="h4" color="inherit" gutterBottom>
               {post.title}
             </Typography>
             <Typography color="inherit" paragraph className={classes.title}>
               {post.description}
             </Typography>
-            <Button size= {`${matchDownMD ? 'large' : 'large'}`} variant="contained" className={classes.titleButton} >
-              {post.titleButton}
-            </Button>
           </Box>
         </Grid>
       </Grid>
@@ -91,11 +84,11 @@ function MainFeaturedPost(props) {
   );
 }
 
-MainFeaturedPost.propTypes = {
+AboutUsBanner.propTypes = {
   post: PropTypes.shape({
     description: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default MainFeaturedPost;
+export default AboutUsBanner;

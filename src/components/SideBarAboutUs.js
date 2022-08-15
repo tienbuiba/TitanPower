@@ -1,10 +1,9 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { makeStyles } from '@mui/styles';
+import { Divider } from '@mui/material';
 
 const useStyles = makeStyles(function (theme) {
   return {
@@ -21,27 +20,24 @@ const useStyles = makeStyles(function (theme) {
   }
 })
 
-function Sidebar(props) {
+function SidebarAboutUs(props) {
   const { archives } = props;
   const classes = useStyles()
   return (
-    <Grid >
-      <Paper elevation={0} sx={{ p: 1, bgcolor: 'grey.200' }}>
-        <Typography variant="h6" gutterBottom sx={{ mt: 2 }} color="text.secondary">
-          Category        </Typography>
-      </Paper>
+    <Grid >  
       {archives.map((archive) => (
         <Link display="block" variant="body1" href={archive.url} key={archive.title} sx={{ mb: 1, p: 2, fontSize: '14px', textDecoration: 'none' }}
           className={classes.link}
         >
-          {archive.title}
+          {archive.title} 
+          <Divider sx={{ mt:1,}}/>
         </Link>
       ))}
     </Grid>
   );
 }
 
-Sidebar.propTypes = {
+SidebarAboutUs.propTypes = {
   archives: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string.isRequired,
@@ -50,4 +46,4 @@ Sidebar.propTypes = {
   ).isRequired
 };
 
-export default Sidebar;
+export default SidebarAboutUs;

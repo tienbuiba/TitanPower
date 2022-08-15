@@ -15,7 +15,6 @@ import FeaturedPlayListIcon from '@mui/icons-material/FeaturedPlayList';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import ListItemButton from '@mui/material/ListItemButton';
 import { makeStyles } from '@mui/styles';
-import AppBar from './AppBar';
 import Toolbar from './ToolBar';
 import Logo from './Logo';
 import Button from '@mui/material/Button'
@@ -37,7 +36,7 @@ const useStyles = makeStyles(function (theme) {
   }
 })
 
-function AppAppBar({sections}) {
+function AppAppBar({ sections }) {
   const classes = useStyles();
   const theme = useTheme();
   const [isOpen, setIsOpen] = React.useState(false);
@@ -93,63 +92,63 @@ function AppAppBar({sections}) {
   );
 
   return (
-    <Toolbar sx={{ p:0}} 
-     component="nav"
- variant="dense">
-    <Box sx={{ flex: 0, display: { lg: 'flex', md: 'none', xs: 'none', justifyContent: 'flex-start' } }} />
-    <Button size="small" href="/"  sx={{ }}>
-      <Logo />
-    </Button>
-    <Box sx={{ flex: 1, display: { lg: 'flex', md: 'none', xs: 'none' }, justifyContent: 'flex-end' }}>
-      {sections.map((section) => (
-        <Link
-          className={classes.linkAppBar}
-          color="inherit"
-          variant={matchDownSM ? 'body2' : 'h6'}
-          fontSize={matchDownSM ? '10px' : '14px'}
-          marginLeft={matchDownSM ? '5px' : '24px'}
-          underline="none"
-          sx={{
-            color: '#000',
-            p: 1,
-            flexShrink: 0
-          }}
-          noWrap
-          key={section.title}
-          href={section.url}
-        >
-          {section.title}
-        </Link>
-      ))}
-      <Box>
-        <IconButton>
-          <SearchIcon sx={{ mx: 1 }} />
-        </IconButton>
-        <Button variant="contained" size="small" sx={{ textTransform: 'capitalize', }}>
-          FB LinkedIn
-        </Button>
+    <Toolbar sx={{ p: '8px !important' }}
+      component="nav"
+      variant="dense">
+      <Box sx={{ flex: 0, display: { lg: 'flex', md: 'none', xs: 'none', justifyContent: 'flex-start' } }} />
+      <Button size="small" href="/" sx={{}}>
+        <Logo />
+      </Button>
+      <Box sx={{ flex: 1, display: { lg: 'flex', md: 'none', xs: 'none' }, justifyContent: 'flex-end' }}>
+        {sections.map((section) => (
+          <Link
+            className={classes.linkAppBar}
+            color="inherit"
+            fontSize={matchDownSM ? '14px' : '16px'}
+            marginLeft={matchDownSM ? '5px' : '24px'}
+            underline="none"
+            sx={{
+              color: '#000',
+              p: 1,
+              fontWeight: 500,
+              flexShrink: 0
+            }}
+            noWrap
+            key={section.title}
+            href={section.url}
+          >
+            {section.title}
+          </Link>
+        ))}
+        <Box>
+          <IconButton>
+            <SearchIcon sx={{ mx: 1 }} />
+          </IconButton>
+          <Button variant="contained" size="small" sx={{ textTransform: 'capitalize', }}>
+            FB LinkedIn
+          </Button>
+        </Box>
       </Box>
-    </Box>
-    <Box sx={{ flex: 1, display: { lg: 'none', md: 'flex', xs: 'flex' }, justifyContent: 'flex-end' }}>
-      <IconButton
-        size="large"
-        aria-label="menu"
-        aria-controls="menu-appbar"
-        aria-haspopup="true"
-        color="inherit"
-        onClick={openToggleDrawer}
-      >
-        <MenuIcon />
-      </IconButton>
-      <Drawer
-        anchor={'right'}
-        open={isOpen}
-        onClose={closeToggleDrawer}
-      >
-        {renderListItem()}
-      </Drawer>
-    </Box>
-  </Toolbar>
+      <Box sx={{ flex: 1, display: { lg: 'none', md: 'flex', xs: 'flex' }, justifyContent: 'flex-end' }}>
+        <IconButton
+          size="large"
+          aria-label="menu"
+          aria-controls="menu-appbar"
+          aria-haspopup="true"
+          color="inherit"
+          onClick={openToggleDrawer}
+        >
+          <MenuIcon />
+        </IconButton>
+        <Drawer
+          anchor={'right'}
+          open={isOpen}
+          onClose={closeToggleDrawer}
+        >
+          {renderListItem()}
+        </Drawer>
+      </Box>
+    </Toolbar>
   );
 }
 
