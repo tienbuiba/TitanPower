@@ -32,7 +32,7 @@ const useStyles = makeStyles(function (theme) {
 })
 
 
-export default function AboutUs() {
+export default function ProductDetail() {
   const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>

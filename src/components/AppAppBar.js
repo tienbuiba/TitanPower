@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
-import { useMediaQuery, useTheme } from '@mui/material';
+import { Divider, useMediaQuery, useTheme } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
@@ -9,17 +9,18 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import FeedIcon from '@mui/icons-material/Feed';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import FeaturedPlayListIcon from '@mui/icons-material/FeaturedPlayList';
-import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import ListItemButton from '@mui/material/ListItemButton';
 import { makeStyles } from '@mui/styles';
 import Toolbar from './ToolBar';
 import Logo from './Logo';
 import Button from '@mui/material/Button'
 import SearchIcon from '@mui/icons-material/Search';
-
+import InfoIcon from '@mui/icons-material/Info';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import StorefrontIcon from '@mui/icons-material/Storefront';
 
 const useStyles = makeStyles(function (theme) {
   return {
@@ -30,7 +31,10 @@ const useStyles = makeStyles(function (theme) {
     },
     linkAppBarSpecial: {
       '&:hover': {
-        color: '#ffffff'
+        color: '#ff3366',
+        display: 'block',
+        width: '100%',
+        height: '100%',
       }
     }
   }
@@ -51,40 +55,62 @@ function AppAppBar({ sections }) {
 
   const renderListItem = () => (
     <Box
-      sx={{ width: 250, height: '100%', bgcolor: '#ffffff' }}
+      sx={{ width: 270, height: '100%', bgcolor: '#fff' }}
       role="presentation"
     >
       <List>
-        <ListItem button key={"BANKING & CARD"}>
-          <ListItemButton href='/'>
+        <ListItem button key={"About Us"} className={classes.linkAppBarSpecial}>
+          <ListItemButton href='/aboutus'>
             <ListItemIcon>
-              <AccountBalanceIcon />
+              <InfoIcon />
             </ListItemIcon>
-            <ListItemText primary={"BANKING & CARD"} />
+            <ListItemText primary={"ABOUT US"} />
+            <Divider />
           </ListItemButton >
         </ListItem>
-        <ListItem button key={"PRODUCT"}>
-          <ListItemButton href='/'>
+        <ListItem button key={"Product"} className={classes.linkAppBarSpecial}>
+          <ListItemButton href='/products'>
             <ListItemIcon>
               <CreditCardIcon />
             </ListItemIcon>
             <ListItemText primary={"PRODUCT"} />
+            <Divider />
           </ListItemButton >
         </ListItem>
-        <ListItem button key={"FEATURES"}>
-          <ListItemButton href='/'>
+        <ListItem button key={"Manufacture"} className={classes.linkAppBarSpecial}>
+          <ListItemButton href='/manufacture'>
             <ListItemIcon>
               <FeaturedPlayListIcon />
             </ListItemIcon>
-            <ListItemText primary={"FEATURES"} />
+            <ListItemText primary={"MANUFACTURE"} />
+            <Divider />
           </ListItemButton >
         </ListItem>
-        <ListItem button key={"PRIVILEGES"}>
-          <ListItemButton href='/'>
+        <ListItem button key={"Market"} className={classes.linkAppBarSpecial}>
+          <ListItemButton href='/market'>
             <ListItemIcon>
-              <CardGiftcardIcon />
+              <StorefrontIcon />
             </ListItemIcon>
-            <ListItemText primary={"PRIVILEGES"} />
+            <ListItemText primary={"MARKET"} />
+            <Divider />
+          </ListItemButton>
+        </ListItem>
+        <ListItem button key={"News"} className={classes.linkAppBarSpecial}>
+          <ListItemButton href='/news'>
+            <ListItemIcon>
+              <FeedIcon />
+            </ListItemIcon>
+            <ListItemText primary={"NEWS"} />
+            <Divider />
+          </ListItemButton>
+        </ListItem>
+        <ListItem button key={"Contact"} className={classes.linkAppBarSpecial}>
+          <ListItemButton href='/contact'>
+            <ListItemIcon>
+              <ContactPageIcon/>
+            </ListItemIcon>
+            <ListItemText primary={"CONTACT"} />
+            <Divider />
           </ListItemButton>
         </ListItem>
       </List>
@@ -92,7 +118,7 @@ function AppAppBar({ sections }) {
   );
 
   return (
-    <Toolbar sx={{ p: '8px !important' }}
+    <Toolbar sx={{ p: '0px !important' }}
       component="nav"
       variant="dense">
       <Box sx={{ flex: 0, display: { lg: 'flex', md: 'none', xs: 'none', justifyContent: 'flex-start' } }} />
@@ -124,7 +150,7 @@ function AppAppBar({ sections }) {
           <IconButton>
             <SearchIcon sx={{ mx: 1 }} />
           </IconButton>
-          <Button variant="contained" size="small" sx={{ textTransform: 'capitalize', }}>
+          <Button variant="contained" href="https://www.facebook.com/Titanpowerstore/" size="small" sx={{ textTransform: 'capitalize', }}>
             FB LinkedIn
           </Button>
         </Box>

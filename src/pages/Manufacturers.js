@@ -16,7 +16,7 @@ import About from '../components/About';
 
 const theme = createTheme();
 
-export default function Home() {
+export default function Manufacturers() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
