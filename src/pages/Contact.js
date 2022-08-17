@@ -7,11 +7,6 @@ import sections from '.././config/sections'
 import AppAppBar from '../components/AppAppBar';
 import { Button, Divider, Grid, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import {
-
-  LoadScript
-
-} from "@react-google-maps/api";
 import Map from '../components/Map';
 import AboutUsBanner from '../components/AboutUsBanner';
 import aboutus from '../config/aboutus';
@@ -22,7 +17,7 @@ export default function Contact() {
 
     alert('submit success');
   }
-
+  const key = 'AIzaSyAIxGXL2hgPVdhg3hB5KwXoyWY9G-j6V9s'
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -84,15 +79,8 @@ export default function Contact() {
               </Box>
             </Grid>
             <Grid item xs={12} md={6}>
-              <LoadScript
-                id="script-loader"
-                googleMapsApiKey={"AIzaSyBX1z5nvjcjzyxSMT-QCVS3ERu6Y3iNSb0"}
-                language="en"
-                region="EN"
-                version="weekly"
-              >
-                <Map />
-              </LoadScript>
+            <Map       
+          />
             </Grid>
           </Grid>
         </Container>

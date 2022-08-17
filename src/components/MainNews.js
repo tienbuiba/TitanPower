@@ -16,6 +16,7 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="image"
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
