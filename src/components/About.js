@@ -16,6 +16,7 @@ function About(props) {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%' }}
+                alt="image"
               />
               <div style={{ padding: '16px' }}>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
