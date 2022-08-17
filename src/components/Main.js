@@ -16,6 +16,7 @@ function Main() {
             <img
               src={require('../assets/images/ourProducts/image1.jpg')}
               style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+              alt="images"
             />
             <div>
               <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -33,6 +34,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imag2es"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -50,6 +53,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="ima23ges"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -67,6 +72,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imag2323es"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -84,6 +91,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="image43s"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -101,6 +110,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="im33ages"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -118,6 +129,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="ima334ges"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -135,6 +148,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="ima23ges"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -152,6 +167,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="image3s"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -169,6 +186,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imasges"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -186,6 +205,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="images3"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -203,6 +224,8 @@ function Main() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imag34es"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
