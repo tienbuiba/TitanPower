@@ -21,6 +21,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import StorefrontIcon from '@mui/icons-material/Storefront';
+import sections from '../config/sections';
 
 const useStyles = makeStyles(function (theme) {
   return {
@@ -40,7 +41,7 @@ const useStyles = makeStyles(function (theme) {
   }
 })
 
-function AppAppBar(sections) {
+function AppAppBar() {
   const classes = useStyles();
   const theme = useTheme();
   const [isOpen, setIsOpen] = React.useState(false);

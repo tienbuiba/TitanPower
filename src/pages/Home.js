@@ -8,7 +8,6 @@ import Main from '../components/Main';
 import Sidebar from '../components/SideBar';
 import Footer from '../components/Footer';
 import { Typography } from '@mui/material';
-import sections from '.././config/sections'
 import sidebar from '.././config/sidebar'
 import AppAppBar from '../components/AppAppBar';
 import banner from '../config/bannner';
@@ -21,7 +20,7 @@ export default function Home() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <AppAppBar sections={sections} />
+        <AppAppBar/>
       </Container>
       <main>
         <MainFeaturedPost post={banner} />
