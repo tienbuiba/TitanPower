@@ -16,7 +16,7 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
-                alt="image"
+                alt="imagses"
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -34,6 +34,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imagsses"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -51,6 +53,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imasgses"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -68,6 +72,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imagsess"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -85,6 +91,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imsagses"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -102,6 +110,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imagsess"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -119,6 +129,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="ss"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -136,6 +148,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imagssses"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -153,6 +167,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imassgses"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -170,6 +186,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imagdsses"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -187,6 +205,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imagsesss"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -204,6 +224,8 @@ function MainNews() {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                alt="imagssses"
+
               />
               <div>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>

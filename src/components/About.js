@@ -16,7 +16,7 @@ function About(props) {
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '50%' }}
-                alt="image"
+                alt="imagse"
               />
               <div style={{ padding: '16px' }}>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -38,6 +38,8 @@ function About(props) {
               <img
                 src={require('../assets/images/ourProducts/image2.jpg')}
                 style={{ width: '100%', height: '50%' }}
+                alt="imsagses"
+
               />
               <div style={{ padding: '16px' }}>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
@@ -60,6 +62,8 @@ function About(props) {
               <img
                 src={require('../assets/images/ourProducts/image3.jpg')}
                 style={{ width: '100%', height: '50%' }}
+                alt="simagses"
+
               />
               <div style={{ padding: '16px' }}>
                 <Typography component="h2" variant="h5" sx={{ mb: 1 }}>

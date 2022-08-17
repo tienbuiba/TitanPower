@@ -40,7 +40,7 @@ const useStyles = makeStyles(function (theme) {
   }
 })
 
-function AppAppBar({ sections }) {
+function AppAppBar(sections) {
   const classes = useStyles();
   const theme = useTheme();
   const [isOpen, setIsOpen] = React.useState(false);
@@ -107,7 +107,7 @@ function AppAppBar({ sections }) {
         <ListItem button key={"Contact"} className={classes.linkAppBarSpecial}>
           <ListItemButton href='/contact'>
             <ListItemIcon>
-              <ContactPageIcon/>
+              <ContactPageIcon />
             </ListItemIcon>
             <ListItemText primary={"CONTACT"} />
             <Divider />

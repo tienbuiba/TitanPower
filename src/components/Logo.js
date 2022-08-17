@@ -1,4 +1,5 @@
 import ApolloLogo from '.././assets/images/Logo/logo.png';
+import {React} from 'react';
 
 const Logo = () => {
     return (

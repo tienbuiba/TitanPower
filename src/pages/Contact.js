@@ -17,7 +17,7 @@ export default function Contact() {
 
     alert('submit success');
   }
-  const key = 'AIzaSyAIxGXL2hgPVdhg3hB5KwXoyWY9G-j6V9s'
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -32,7 +32,7 @@ export default function Contact() {
             <Grid item xs={12} md={6}>
               <Typography component="h1" variant="h4" sx={{ fontWeight: "bold", wordSpacing: '0.1' }}>
                 Feel free to contact us.
-                We'll be glad to hear from you, buddy.
+                We&apos;ll be glad to hear from you, buddy.
               </Typography>
               <Box component="form" noValidate sx={{ mt: 3 }}>
                 <Grid container spacing={2.8}>

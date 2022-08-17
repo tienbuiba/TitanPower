@@ -1,6 +1,7 @@
 import { Box, Button, Container, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Link from '@mui/material/Link';
+import {React} from 'react';
 
 const PageNotFound = () => (
   <>
