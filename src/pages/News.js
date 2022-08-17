@@ -20,7 +20,7 @@ export default function News() {
         <AppAppBar sections={sections} />
       </Container>
       <main>
-        <NewsBanner post={news} />
+        <NewsBanner banner={news} />
         <Container maxWidth="lg" sx={{ mb: 12 }}>
           <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
             <Typography

@@ -22,6 +22,8 @@ import InfoIcon from '@mui/icons-material/Info';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import sections from '../config/sections';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const useStyles = makeStyles(function (theme) {
   return {
@@ -147,13 +149,13 @@ function AppAppBar() {
             {section.title}
           </Link>
         ))}
-        <Box>
-          <IconButton>
-            <SearchIcon sx={{ mx: 1 }} />
-          </IconButton>
-          <Button variant="contained" href="https://www.facebook.com/Titanpowerstore/" size="small" sx={{ textTransform: 'capitalize', }}>
-            FB LinkedIn
-          </Button>
+        <Box sx={{ ml: 3 }}>
+          <Link href="https://www.facebook.com/Titanpowerstore/" className={classes.link}  >
+            <FacebookIcon sx={{ m: 1 }} size="medium" />
+          </Link>
+          <Link href="https://www.facebook.com/Titanpowerstore/" className={classes.link} >
+            <LinkedInIcon sx={{ m: 1 }} size="medium" />
+          </Link>
         </Box>
       </Box>
       <Box sx={{ flex: 1, display: { lg: 'none', md: 'flex', xs: 'flex' }, justifyContent: 'flex-end' }}>

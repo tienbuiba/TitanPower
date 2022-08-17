@@ -26,7 +26,7 @@ export default function Contact() {
         <Divider />
       </Container>
       <main>
-        <AboutUsBanner post={aboutus} />
+        <AboutUsBanner banner={aboutus} />
         <Container maxWidth="lg">
           <Grid container spacing={4} sx={{ mb: 9, mt: 3 }}>
             <Grid item xs={12} md={6}>

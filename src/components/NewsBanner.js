@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Background from '../assets/images/new/banner.jpg';
-
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
@@ -35,7 +34,7 @@ const useStyles = makeStyles(theme => ({
 
 
 function NewsBanner(props) {
-  const { post } = props;
+  const { banner } = props;
   const classes = useStyles();
 
 
@@ -72,10 +71,10 @@ function NewsBanner(props) {
             }}
           >
             <Typography variant="h4" color="inherit" gutterBottom>
-              {post.title}
+              {banner.title}
             </Typography>
             <Typography color="inherit" paragraph className={classes.title}>
-              {post.description}
+              {banner.description}
             </Typography>
           </Box>
         </Grid>
@@ -85,7 +84,7 @@ function NewsBanner(props) {
 }
 
 NewsBanner.propTypes = {
-  post: PropTypes.shape({
+  banner: PropTypes.shape({
     description: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
   }).isRequired,

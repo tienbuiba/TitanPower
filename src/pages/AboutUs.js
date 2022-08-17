@@ -11,6 +11,7 @@ import AboutUsBanner from '../components/AboutUsBanner';
 import aboutus from '../config/aboutus';
 import SidebarAboutUs from '../components/SideBarAboutUs';
 import { makeStyles } from '@mui/styles';
+import banner from '../config/bannner';
 
 
 const sidebar = {
@@ -28,7 +29,8 @@ const useStyles = makeStyles(function (theme) {
       fontSize: '32px !important',
       fontWeight: 'bold !important',
       marginBottom: '8px !important'
-    }}
+    }
+  }
 })
 
 
@@ -41,7 +43,7 @@ export default function AboutUs() {
         <AppAppBar sections={sections} />
       </Container>
       <main>
-        <AboutUsBanner post={aboutus} />
+        <AboutUsBanner banner={banner} />
         <Container maxWidth="lg" sx={{ mb: 12 }} >
           <Grid container spacing={2} sx={{ mb: 9, display: 'flex', alignItems: 'stretch' }}>
             <Grid item xs={4} lg={3} sx={{ mt: 3 }}>

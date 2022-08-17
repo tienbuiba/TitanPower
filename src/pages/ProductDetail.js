@@ -41,7 +41,7 @@ export default function ProductDetail() {
         <AppAppBar sections={sections} />
       </Container>
       <main>
-        <AboutUsBanner post={aboutus} />
+        <AboutUsBanner banner={aboutus} />
         <Container maxWidth="lg" sx={{ mb: 12 }} >
           <Grid container spacing={2} sx={{ mb: 9, display: 'flex', alignItems: 'stretch' }}>
             <Grid item xs={4} lg={3} sx={{ mt: 3 }}>

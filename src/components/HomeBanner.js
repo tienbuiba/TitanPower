@@ -36,8 +36,8 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-function MainFeaturedPost(props) {
-  const { post } = props;
+function HomeBanner(props) {
+  const { banner } = props;
   const classes = useStyles();
   const theme =useTheme();
   const matchDownMD = useMediaQuery(theme.breakpoints.down('md'));
@@ -76,13 +76,13 @@ function MainFeaturedPost(props) {
             }}
           >
             <Typography variant="h4" color="inherit" gutterBottom >
-              {post.title}
+              {banner.title}
             </Typography>
             <Typography color="inherit" paragraph className={classes.title}>
-              {post.description}
+              {banner.description}
             </Typography>
-            <Button size= {`${matchDownMD ? 'large' : 'large'}`} variant="contained" className={classes.titleButton} >
-              {post.titleButton}
+            <Button size= {`${matchDownMD ? 'large' : 'large'}`} variant="contained" className={classes.titleButton} href="/Manufacturers">
+              {banner.titleButton}
             </Button>
           </Box>
         </Grid>
@@ -91,12 +91,12 @@ function MainFeaturedPost(props) {
   );
 }
 
-MainFeaturedPost.propTypes = {
-  post: PropTypes.shape({
+HomeBanner.propTypes = {
+  banner: PropTypes.shape({
     description: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     titleButton: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default MainFeaturedPost;
+export default HomeBanner;
