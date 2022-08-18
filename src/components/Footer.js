@@ -5,7 +5,6 @@ import Link from '@mui/material/Link';
 import Container from '@mui/material/Container';
 import { Button, Typography } from '@mui/material';
 import CopyRight from './CopyRight';
-import Logo from './Logo';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -41,11 +40,11 @@ export default function Footer() {
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
             <Button style={{ width: '30%' }} href="/" sx={{ mb: 1 }}>
-            <img src={require('./../assets/images/logo/logo.png')} alt="Apollo" width="100%" height="60px" 
+            {/* <img src={require('./../assets/images/logo/logo.png')} alt="Apollo" width="100%" height="60px" 
         style={{
             opacity: '1',
             transition: 'opacity .4s'
-        }} />
+        }} /> */}
             </Button>
             <Typography sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px', mb: 1 }}>TitanPower Systems (Pte) Ltd has achieved ISO 9001:2015 certification</Typography>
             <div sx={{ marginTop: '16px' }}>
