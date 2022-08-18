@@ -5,51 +5,31 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import Background from '../assets/images/aboutUs/image1.jpg';
-import { makeStyles } from '@mui/styles';
 
-const useStyles = makeStyles(theme => ({
-  banner: {
-    height: '400px',
-    [theme.breakpoints.down('lg')]: {
-      height: '370px',
-    }
-  },
-  title: {
-    fontSize: '14px',
-    marginBottom: '30px',
-    [theme.breakpoints.down('lg')]: {
-      fontSize: '13px',
-      marginBottom: '25px'
-    },
-    [theme.breakpoints.down('md')]: {
-      fontSize: '13px',
-      marginBottom: '20px',
-    }
-  },
-  titleButton: {
-    color: '#337ab7 !important',
-    backgroundColor: '#fff !important',
-  }
-}));
+const bannerr = {
+  height: '400px',
+  position: 'relative',
+  color: '#fff',
+  mb: 6,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+  backgroundImage: `url(${Background})`
 
+}
+
+const title = {
+  fontSize: '14px',
+  marginBottom: '30px',
+}
 
 function AboutUsBanner(props) {
   const { banner } = props;
-  const classes = useStyles();
 
 
   return (
     <Paper
-      sx={{
-        position: 'relative',
-        color: '#fff',
-        mb: 6,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundImage: `url(${Background})`
-      }}
-      className={classes.banner}
+      sx={bannerr}
     >
       <Box
         sx={{
@@ -73,7 +53,7 @@ function AboutUsBanner(props) {
             <Typography variant="h4" color="inherit" gutterBottom>
               {banner.title}
             </Typography>
-            <Typography color="inherit" paragraph className={classes.title}>
+            <Typography color="inherit" paragraph sx={title}>
               {banner.description}
             </Typography>
           </Box>

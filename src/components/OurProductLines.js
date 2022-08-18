@@ -11,7 +11,7 @@ function OurProductLines() {
       <Grid item xs={4} sm={3}>
         <CardActionArea component="a" href="#">
           <Card sx={{ display: 'flex' }}>
-            <CardContent sx={{ p: '0px !important', height: '90%', border: '1px solid #ccc' }}>
+            <CardContent sx={{ p: '0px ', height: '90%', border: '1px solid #ccc' }}>
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '30%' }}
@@ -24,7 +24,7 @@ function OurProductLines() {
       <Grid item xs={4} sm={3}>
         <CardActionArea component="a" href="#">
           <Card sx={{ display: 'flex' }}>
-            <CardContent sx={{ p: '0px !important', height: '90%', border: '1px solid #ccc' }}>
+            <CardContent sx={{ p: '0px ', height: '90%', border: '1px solid #ccc' }}>
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '30%' }}
@@ -37,7 +37,7 @@ function OurProductLines() {
       <Grid item xs={4} sm={3}>
         <CardActionArea component="a" href="#">
           <Card sx={{ display: 'flex' }}>
-            <CardContent sx={{ p: '0px !important', height: '90%', border: '1px solid #ccc' }}>
+            <CardContent sx={{ p: '0px ', height: '90%', border: '1px solid #ccc' }}>
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '30%' }}
@@ -50,7 +50,7 @@ function OurProductLines() {
       <Grid item xs={4} sm={3}>
         <CardActionArea component="a" href="#">
           <Card sx={{ display: 'flex' }}>
-            <CardContent sx={{ p: '0px !important', height: '90%', border: '1px solid #ccc' }}>
+            <CardContent sx={{ p: '0px ', height: '90%', border: '1px solid #ccc' }}>
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '30%' }}
@@ -63,7 +63,7 @@ function OurProductLines() {
       <Grid item xs={4} sm={3}>
         <CardActionArea component="a" href="#">
           <Card sx={{ display: 'flex' }}>
-            <CardContent sx={{ p: '0px !important', height: '90%', border: '1px solid #ccc' }}>
+            <CardContent sx={{ p: '0px ', height: '90%', border: '1px solid #ccc' }}>
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '30%' }}
@@ -76,7 +76,7 @@ function OurProductLines() {
       <Grid item xs={4} sm={3}>
         <CardActionArea component="a" href="#">
           <Card sx={{ display: 'flex' }}>
-            <CardContent sx={{ p: '0px !important', height: '90%', border: '1px solid #ccc' }}>
+            <CardContent sx={{ p: '0px ', height: '90%', border: '1px solid #ccc' }}>
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '30%' }}
@@ -89,7 +89,7 @@ function OurProductLines() {
       <Grid item xs={4} sm={3}>
         <CardActionArea component="a" href="#">
           <Card sx={{ display: 'flex' }}>
-            <CardContent sx={{ p: '0px !important', height: '90%', border: '1px solid #ccc' }}>
+            <CardContent sx={{ p: '0px ', height: '90%', border: '1px solid #ccc' }}>
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '30%' }}
@@ -102,7 +102,7 @@ function OurProductLines() {
       <Grid item xs={4} sm={3}>
         <CardActionArea component="a" href="#">
           <Card sx={{ display: 'flex' }}>
-            <CardContent sx={{ p: '0px !important', height: '90%', border: '1px solid #ccc' }}>
+            <CardContent sx={{ p: '0px ', height: '90%', border: '1px solid #ccc' }}>
               <img
                 src={require('../assets/images/ourProducts/image1.jpg')}
                 style={{ width: '100%', height: '30%' }}

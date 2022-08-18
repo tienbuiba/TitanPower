@@ -9,7 +9,6 @@ import sections from '.././config/sections'
 import AppAppBar from '../components/AppAppBar';
 import AboutUsBanner from '../components/AboutUsBanner';
 import SidebarAboutUs from '../components/SideBarAboutUs';
-import { makeStyles } from '@mui/styles';
 import banner from '../config/bannner';
 
 
@@ -21,20 +20,17 @@ const sidebar = {
 };
 
 const theme = createTheme();
-const useStyles = makeStyles(function (theme) {
-  return {
-    title: {
-      wordSpacing: '2px !important',
-      fontSize: '32px !important',
-      fontWeight: 'bold !important',
-      marginBottom: '8px !important'
-    }
-  }
-})
 
+
+
+const title ={
+  wordSpacing: '2px ',
+  fontSize: '32px ',
+  fontWeight: 'bold ',
+  marginBottom: '8px '
+}
 
 export default function AboutUs() {
-  const classes = useStyles();
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -52,7 +48,7 @@ export default function AboutUs() {
             </Grid>
             <Grid container item xs={8} lg={9} spacing={2} sx={{ mt: 3, mb: 9, display: 'flex', alignItems: 'stretch !important' }}>
               <Container sx={{ textAlign: 'left' }} >
-                <Typography align="left" color="text.secondary" className={classes.title}>
+                <Typography align="left" color="text.secondary" sx={title}>
                   Leading Regional Electronics Components Distributor
                 </Typography>
                 <Typography variant="body1" align="left" color="text.secondary" component="p" sx={{ wordSpacing: '2px', lineHeight: '1.7' }}>

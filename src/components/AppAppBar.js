@@ -13,7 +13,6 @@ import FeedIcon from '@mui/icons-material/Feed';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import FeaturedPlayListIcon from '@mui/icons-material/FeaturedPlayList';
 import ListItemButton from '@mui/material/ListItemButton';
-import { makeStyles } from '@mui/styles';
 import Toolbar from './ToolBar';
 import Logo from './Logo';
 import Button from '@mui/material/Button'
@@ -24,26 +23,34 @@ import sections from '../config/sections';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
-const useStyles = makeStyles(function (theme) {
-  return {
-    linkAppBar: {
-      '&:hover': {
-        color: '#ff3366'
-      }
-    },
-    linkAppBarSpecial: {
-      '&:hover': {
-        color: '#ff3366',
-        display: 'block',
-        width: '100%',
-        height: '100%',
-      }
-    }
+
+
+const linkAppBar = {
+  color: '#000',
+  p: 1,
+  fontWeight: 500,
+  flexShrink: 0,
+  '&:hover': {
+    color: '#ff3366'
   }
-})
+}
+
+const link = {
+  '&:hover': {
+    color: '#ff3366'
+  }
+}
+
+const linkAppBarSpecial = {
+  '&:hover': {
+    color: '#ff3366',
+    display: 'block',
+    width: '100%',
+    height: '100%',
+  }
+}
 
 function AppAppBar() {
-  const classes = useStyles();
   const theme = useTheme();
   const [isOpen, setIsOpen] = React.useState(false);
   const matchDownSM = useMediaQuery(theme.breakpoints.down('sm'));
@@ -61,7 +68,7 @@ function AppAppBar() {
       role="presentation"
     >
       <List>
-        <ListItem button key={"About Us"} className={classes.linkAppBarSpecial}>
+        <ListItem button key={"About Us"} sx={linkAppBarSpecial}>
           <ListItemButton href='/aboutus'>
             <ListItemIcon>
               <InfoIcon />
@@ -70,7 +77,7 @@ function AppAppBar() {
             <Divider />
           </ListItemButton >
         </ListItem>
-        <ListItem button key={"Product"} className={classes.linkAppBarSpecial}>
+        <ListItem button key={"Product"} sx={linkAppBarSpecial}>
           <ListItemButton href='/products'>
             <ListItemIcon>
               <CreditCardIcon />
@@ -79,7 +86,7 @@ function AppAppBar() {
             <Divider />
           </ListItemButton >
         </ListItem>
-        <ListItem button key={"Manufacture"} className={classes.linkAppBarSpecial}>
+        <ListItem button key={"Manufacture"} sx={linkAppBarSpecial}>
           <ListItemButton href='/manufacture'>
             <ListItemIcon>
               <FeaturedPlayListIcon />
@@ -88,7 +95,7 @@ function AppAppBar() {
             <Divider />
           </ListItemButton >
         </ListItem>
-        <ListItem button key={"Market"} className={classes.linkAppBarSpecial}>
+        <ListItem button key={"Market"} sx={linkAppBarSpecial}>
           <ListItemButton href='/market'>
             <ListItemIcon>
               <StorefrontIcon />
@@ -97,7 +104,7 @@ function AppAppBar() {
             <Divider />
           </ListItemButton>
         </ListItem>
-        <ListItem button key={"News"} className={classes.linkAppBarSpecial}>
+        <ListItem button key={"News"} sx={linkAppBarSpecial}>
           <ListItemButton href='/news'>
             <ListItemIcon>
               <FeedIcon />
@@ -106,7 +113,7 @@ function AppAppBar() {
             <Divider />
           </ListItemButton>
         </ListItem>
-        <ListItem button key={"Contact"} className={classes.linkAppBarSpecial}>
+        <ListItem button key={"Contact"} sx={linkAppBarSpecial}>
           <ListItemButton href='/contact'>
             <ListItemIcon>
               <ContactPageIcon />
@@ -130,17 +137,11 @@ function AppAppBar() {
       <Box sx={{ flex: 1, display: { lg: 'flex', md: 'none', xs: 'none' }, justifyContent: 'flex-end' }}>
         {sections.map((section) => (
           <Link
-            className={classes.linkAppBar}
+            sx={linkAppBar}
             color="inherit"
             fontSize={matchDownSM ? '14px' : '16px'}
             marginLeft={matchDownSM ? '5px' : '24px'}
             underline="none"
-            sx={{
-              color: '#000',
-              p: 1,
-              fontWeight: 500,
-              flexShrink: 0
-            }}
             noWrap
             key={section.title}
             href={section.url}
@@ -149,10 +150,10 @@ function AppAppBar() {
           </Link>
         ))}
         <Box sx={{ ml: 3 }}>
-          <Link href="https://www.facebook.com/Titanpowerstore/" className={classes.link}  >
+          <Link href="https://www.facebook.com/Titanpowerstore/" sx={link}  >
             <FacebookIcon sx={{ m: 1 }} size="medium" />
           </Link>
-          <Link href="https://www.facebook.com/Titanpowerstore/" className={classes.link} >
+          <Link href="https://www.facebook.com/Titanpowerstore/" sx={link} >
             <LinkedInIcon sx={{ m: 1 }} size="medium" />
           </Link>
         </Box>
