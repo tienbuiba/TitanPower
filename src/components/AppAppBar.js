@@ -17,7 +17,6 @@ import { makeStyles } from '@mui/styles';
 import Toolbar from './ToolBar';
 import Logo from './Logo';
 import Button from '@mui/material/Button'
-import SearchIcon from '@mui/icons-material/Search';
 import InfoIcon from '@mui/icons-material/Info';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import StorefrontIcon from '@mui/icons-material/Storefront';

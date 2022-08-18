@@ -1,14 +1,11 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Footer from '../components/Footer';
-import { Button, Divider, Typography } from '@mui/material';
+import {Typography } from '@mui/material';
 import AppAppBar from '../components/AppAppBar';
 import banner from '../config/bannner';
-import About from '../components/About';
-import OurProductLines from '../components/OurProductLines';
 import HomeBanner from '../components/HomeBanner';
 
 

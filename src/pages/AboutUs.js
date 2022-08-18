@@ -8,7 +8,6 @@ import { createTheme, Typography } from '@mui/material';
 import sections from '.././config/sections'
 import AppAppBar from '../components/AppAppBar';
 import AboutUsBanner from '../components/AboutUsBanner';
-import aboutus from '../config/aboutus';
 import SidebarAboutUs from '../components/SideBarAboutUs';
 import { makeStyles } from '@mui/styles';
 import banner from '../config/bannner';
