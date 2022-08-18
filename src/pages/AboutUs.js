@@ -3,13 +3,13 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { ThemeProvider } from '@mui/material/styles';
-import Footer from '../components/Footer';
 import { createTheme, Typography } from '@mui/material';
 import sections from '.././config/sections'
-import AppAppBar from '../components/AppAppBar';
-import AboutUsBanner from '../components/AboutUsBanner';
-import SidebarAboutUs from '../components/SideBarAboutUs';
-import banner from '../config/bannner';
+import SidebarAboutUs from '../components/layout/sideBar/SideBarAboutUs';
+import Footer from '../components/layout/Footer';
+import AppAppBar from '../components/layout/AppAppBar';
+import AboutUsBanner from '../components/banners/AboutUsBanner';
+import banner from '../config/banners/homebanner';
 
 
 const sidebar = {

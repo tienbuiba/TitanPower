@@ -2,11 +2,12 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Footer from '../components/Footer';
-import {Typography } from '@mui/material';
-import AppAppBar from '../components/AppAppBar';
-import banner from '../config/bannner';
-import HomeBanner from '../components/HomeBanner';
+import { Grid } from '@mui/material';
+import HomeBanner from '../components/banners/HomeBanner';
+import Footer from '../components/layout/Footer';
+import AppAppBar from '../components/layout/AppAppBar';
+import banner from '../config/banners/homebanner';
+import MainManufacture from '../components/main/MainManufacture';
 
 
 const theme = createTheme();
@@ -21,18 +22,9 @@ const Manufacturers = () => {
       <main>
         <HomeBanner banner={banner} />
         <Container maxWidth="lg" >
-          <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
-            <Typography
-              component="h1"
-              variant="h4"
-              align="center"
-              color="text.primary"
-              gutterBottom
-            >
-            </Typography>
-            <Typography variant="h6" align="center" color="text.secondary" component="p">
-            </Typography>
-          </Container>
+          <Grid container item xs={12} spacing={2} sx={{ mt: 3, mb: 9 }}>
+            <MainManufacture />
+          </Grid>
         </Container>
       </main>
       <Footer

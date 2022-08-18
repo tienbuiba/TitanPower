@@ -2,14 +2,14 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Footer from '../components/Footer';
 import sections from '.././config/sections'
-import AppAppBar from '../components/AppAppBar';
 import { Button, Divider, Grid, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import Map from '../components/Map';
-import AboutUsBanner from '../components/AboutUsBanner';
-import aboutus from '../config/aboutus';
+import Footer from '../components/layout/Footer';
+import AppAppBar from '../components/layout/AppAppBar';
+import ContactBanner from '../components/banners/ContactBanner';
+import contactbanner from '../config/banners/contactbanner';
 
 const theme = createTheme();
 export default function Contact() {
@@ -26,7 +26,7 @@ export default function Contact() {
         <Divider />
       </Container>
       <main>
-        <AboutUsBanner banner={aboutus} />
+        <ContactBanner banner={contactbanner} />
         <Container maxWidth="lg">
           <Grid container spacing={4} sx={{ mb: 9, mt: 3 }}>
             <Grid item xs={12} md={6}>

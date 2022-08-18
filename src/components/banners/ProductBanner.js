@@ -1,10 +1,12 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Background from '../assets/images/new/banner.jpg';
+import { Button, useMediaQuery } from '@mui/material';
+import Background from '../../assets/images/banners/productbanner.jpg';
+import { useTheme } from '@mui/system';
+
 
 const bannerr = {
   height: '400px',
@@ -22,16 +24,23 @@ const title = {
   fontSize: '14px',
   marginBottom: '30px',
 }
+const titleButton = {
+  color: '#337ab7 ',
+  backgroundColor: '#fff ',
+  '&:hover': {
+    backgroundColor: '#5AB9D1',
+    color: '#FFFFFF'
+  }
+}
 
-
-
-function NewsBanner(props) {
+function ProductBanner(props) {
   const { banner } = props;
+  const theme = useTheme();
+  const matchDownMD = useMediaQuery(theme.breakpoints.down('md'));
 
 
   return (
     <Paper
-
       sx={bannerr}
     >
       <Box
@@ -53,11 +62,8 @@ function NewsBanner(props) {
               pr: { md: 0 },
             }}
           >
-            <Typography variant="h4" color="inherit" gutterBottom>
+            <Typography variant="h4" color="inherit" gutterBottom >
               {banner.title}
-            </Typography>
-            <Typography color="inherit" paragraph sx={title}>
-              {banner.description}
             </Typography>
           </Box>
         </Grid>
@@ -68,4 +74,4 @@ function NewsBanner(props) {
 
 
 
-export default NewsBanner;
+export default ProductBanner;

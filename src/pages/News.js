@@ -2,13 +2,13 @@ import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Footer from '../components/Footer';
 import { Typography } from '@mui/material';
 import sections from '.././config/sections'
-import AppAppBar from '../components/AppAppBar';
-import NewsBanner from '../components/NewsBanner';
-import news from '../config/news';
-import MainNews from '../components/MainNews';
+import NewsBanner from '../components/banners/NewsBanner';
+import MainNews from '../components/main/MainNews';
+import Footer from '../components/layout/Footer';
+import AppAppBar from '../components/layout/AppAppBar';
+import newsbanner from '../config/banners/newsbanner';
 
 const theme = createTheme();
 
@@ -20,7 +20,7 @@ export default function News() {
         <AppAppBar sections={sections} />
       </Container>
       <main>
-        <NewsBanner banner={news} />
+        <NewsBanner banner={newsbanner} />
         <Container maxWidth="lg" sx={{ mb: 12 }}>
           <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
             <Typography

@@ -3,11 +3,11 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Footer from '../components/Footer';
 import { Divider, Typography } from '@mui/material';
 import sections from '.././config/sections'
-import AppAppBar from '../components/AppAppBar';
-import About from '../components/About';
+import Footer from '../components/layout/Footer';
+import AppAppBar from '../components/layout/AppAppBar';
+import OurBusiness from '../components/OurBusiness';
 
 const theme = createTheme();
 
@@ -37,7 +37,7 @@ export default function Market() {
             </Typography>
           </Container>
           <Grid container spacing={4} >
-            <About />
+            <OurBusiness />
           </Grid>
         </Container>
       </main>

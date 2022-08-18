@@ -3,7 +3,10 @@ import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Background from '../assets/images/aboutUs/image1.jpg';
+import { Button, useMediaQuery } from '@mui/material';
+import Background from '../../assets/images/banners/banner1.jpg';
+import { useTheme } from '@mui/system';
+
 
 const bannerr = {
   height: '400px',
@@ -21,9 +24,19 @@ const title = {
   fontSize: '14px',
   marginBottom: '30px',
 }
+const titleButton = {
+  color: '#337ab7 ',
+  backgroundColor: '#fff ',
+  '&:hover': {
+    backgroundColor: '#5AB9D1',
+    color: '#FFFFFF'
+  }
+}
 
-function AboutUsBanner(props) {
+function HomeBanner(props) {
   const { banner } = props;
+  const theme = useTheme();
+  const matchDownMD = useMediaQuery(theme.breakpoints.down('md'));
 
 
   return (
@@ -49,12 +62,15 @@ function AboutUsBanner(props) {
               pr: { md: 0 },
             }}
           >
-            <Typography variant="h4" color="inherit" gutterBottom>
+            <Typography variant="h4" color="inherit" gutterBottom >
               {banner.title}
             </Typography>
             <Typography color="inherit" paragraph sx={title}>
               {banner.description}
             </Typography>
+            <Button size={`${matchDownMD ? 'large' : 'large'}`} variant="contained" sx={titleButton} href="/Manufacturers">
+              {banner.titleButton}
+            </Button>
           </Box>
         </Grid>
       </Grid>
@@ -63,4 +79,5 @@ function AboutUsBanner(props) {
 }
 
 
-export default AboutUsBanner;
+
+export default HomeBanner;

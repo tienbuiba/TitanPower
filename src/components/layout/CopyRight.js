@@ -4,11 +4,11 @@ import { Link } from '@mui/material';
 
 function CopyRight() {
   return (
-    <Typography variant="body2" color="text.secondary" align="center" sx={{ mt: 2 }}>
+    <Typography color="text.secondary" align="center" sx={{ mt: 1, fontSize: '13px' }}>
       {'Copyright ©'}
       {new Date().getFullYear()}
-      <Link color="primary" href="#">
-      {' Titanpower'}
+      <Link color="primary" href="#" sx={{ textDecoration: 'none' }}>
+        {' Titanpower'}
       </Link>{' '}
       . All Rights Reserved.
     </Typography>

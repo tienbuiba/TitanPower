@@ -22,7 +22,7 @@ export default function Router() {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/manufacturers" element={<Manufacturers />} />
-          <Route path="/product-detail" element={<ProductDetail />} />
+          <Route path="/product-details" element={<ProductDetail />} />
           <Route path="/news" element={<News />} />
           <Route path="*" element={<PageNotFound />} />
 

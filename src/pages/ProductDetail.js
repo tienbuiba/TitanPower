@@ -3,13 +3,13 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { ThemeProvider } from '@mui/material/styles';
-import Footer from '../components/Footer';
 import { createTheme, Typography } from '@mui/material';
 import sections from '.././config/sections'
-import AppAppBar from '../components/AppAppBar';
-import AboutUsBanner from '../components/AboutUsBanner';
-import aboutus from '../config/aboutus';
-import SidebarAboutUs from '../components/SideBarAboutUs';
+import AppAppBar from '../components/layout/AppAppBar';
+import AboutUsBanner from '../components/banners/AboutUsBanner';
+import Footer from '../components/layout/Footer';
+import SidebarAboutUs from '../components/layout/sideBar/SideBarAboutUs';
+import aboutusbanner from '../config/banners/aboutusbanner';
 
 
 const sidebar = {
@@ -22,7 +22,7 @@ const sidebar = {
 const theme = createTheme();
 
 
-const title  ={
+const title = {
   wordSpacing: '2px ',
   fontSize: '32px ',
   fontWeight: 'bold ',
@@ -38,7 +38,7 @@ export default function ProductDetail() {
         <AppAppBar sections={sections} />
       </Container>
       <main>
-        <AboutUsBanner banner={aboutus} />
+        <AboutUsBanner banner={aboutusbanner} />
         <Container maxWidth="lg" sx={{ mb: 12 }} >
           <Grid container spacing={2} sx={{ mb: 9, display: 'flex', alignItems: 'stretch' }}>
             <Grid item xs={4} lg={3} sx={{ mt: 3 }}>

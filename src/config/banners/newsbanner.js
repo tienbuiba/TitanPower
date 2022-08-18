@@ -1,4 +1,4 @@
-const news = {
+const newsbanner = {
   title: 'Company News & Events',
   description:
     " High Performance Audio Processors for Voice-Controlled Appliances in Smart Home",
@@ -6,4 +6,4 @@ const news = {
 };
 
 
-export default news;
+export default newsbanner;

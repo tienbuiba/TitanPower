@@ -1,4 +1,4 @@
-const aboutus = {
+const aboutusbanner = {
   title: 'Corporate Profile',
   description:
     "Welcome to TitanPower Technology Ltd Investor Relations",
@@ -6,4 +6,4 @@ const aboutus = {
 };
 
 
-export default aboutus;
+export default aboutusbanner;

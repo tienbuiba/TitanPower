@@ -3,15 +3,23 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Footer from '../components/Footer';
 import { Button, Divider, Typography } from '@mui/material';
-import AppAppBar from '../components/AppAppBar';
-import banner from '../config/bannner';
-import About from '../components/About';
 import OurProductLines from '../components/OurProductLines';
-import HomeBanner from '../components/HomeBanner';
+import HomeBanner from '../components/banners/HomeBanner';
+import Footer from '../components/layout/Footer';
+import AppAppBar from '../components/layout/AppAppBar';
+import banner from '../config/banners/homebanner';
+import OurBusiness from '../components/OurBusiness';
 
 const theme = createTheme();
+
+const titleButton ={
+  p:1,
+  '&:hover': {
+    backgroundColor: '#5AB9D1',
+    color: '#FFFFFF'
+  }
+}
 
 export default function Home() {
   return (
@@ -39,7 +47,7 @@ export default function Home() {
             </Typography>
           </Container>
           <Grid container spacing={4} sx={{mb:9}} >
-            <About />
+            <OurBusiness />
           </Grid>
           <Container disableGutters component="main" sx={{ pt: 8, pb: 5 }}>
             <Divider />
@@ -52,7 +60,7 @@ export default function Home() {
                 align="left"
                 color="text.secondary"
                 gutterBottom
-                sx={{ pb: 1 }}
+                sx={titleButton}
               >
                 Our Product Line
               </Typography>

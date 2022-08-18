@@ -40,7 +40,7 @@ export default function Footer() {
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
             <Button href="/" sx={{ mb: 1, width: '30%' }}>
-              <img src={require('./../assets/images/logo/logo.png')} alt="Apollo" width="100%" height="60px"
+              <img src={require('../../assets/images/logo/logo.png')} alt="Apollo" width="100%" height="80px"
                 style={{
                   opacity: '1',
                   transition: 'opacity .4s'
@@ -107,9 +107,26 @@ export default function Footer() {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} sx={{ mb: 2 }}>
-            <div style={{ border: '0.1px solid #e0e0e0', width: '100%' }} />
-            <CopyRight></CopyRight>
+          <Grid container spacing={2} item xs={12} sx={{ mb: 2 }}>
+            <div style={{ border: '0.1px solid #e0e0e0', width: '100%', marginBottom: '16px' }} />
+            <Grid  xs={12} md={4}>
+              <Typography color="text.secondary" align="center" sx={{ fontSize: '13px' }}>
+                Tel：+84-2-8685-9877
+              </Typography>
+            </Grid>
+            <Grid xs={12} md={4}>
+              <Typography color="text.secondary" align="center" sx={{ fontSize: '13px' }}>
+                Add： 3F., No. 84, Duy Tan Dist., Ha Noi City 10000, VietNam
+              </Typography>
+            </Grid>
+            <Grid xs={12} md={4}>
+              <Typography color="text.secondary" align="center" sx={{ fontSize: '13px' }}>
+                E-mail：sales@titanpower@.com
+              </Typography>
+            </Grid>
+            <Grid xs={12}>
+              <CopyRight></CopyRight>
+            </Grid>
           </Grid>
         </Grid>
       </Container>
