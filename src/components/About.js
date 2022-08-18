@@ -5,8 +5,7 @@ import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 
-function About(props) {
-
+function About() {
   return (
     <>
       <Grid item xs={12} sm={6} lg={4}>
@@ -55,7 +54,8 @@ function About(props) {
             </CardContent>
           </Card>
         </CardActionArea>
-      </Grid>    <Grid item xs={12} sm={6} lg={4}>
+      </Grid> 
+         <Grid item xs={12} sm={6} lg={4}>
         <CardActionArea component="a" href="#">
           <Card sx={{ display: 'flex' }}>
             <CardContent sx={{ p: 0, height: '60%' }}>

@@ -24,7 +24,7 @@ function SidebarAboutUs(props) {
           sx={link}
         >
           {archive.title}
-          <Divider sx={{ mt: 1, }} />
+          <Divider sx={{ mt: 1 }} />
         </Link>
       ))}
     </Grid>
