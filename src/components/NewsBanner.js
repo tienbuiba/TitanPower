@@ -66,11 +66,6 @@ function NewsBanner(props) {
   );
 }
 
-NewsBanner.propTypes = {
-  banner: PropTypes.shape({
-    description: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-};
+
 
 export default NewsBanner;

@@ -39,7 +39,7 @@ export default function Footer() {
       <Container >
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
-            <Button style={{ width: '30%' }} href="/" sx={{ mb: 1 }}>
+            <Button href="/" sx={{ mb: 1,width: '30%' }}>
             {/* <img src={require('./../assets/images/logo/logo.png')} alt="Apollo" width="100%" height="60px" 
         style={{
             opacity: '1',
@@ -73,7 +73,7 @@ export default function Footer() {
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" marked="left" gutterBottom style={{ fontSize: '16px' }}>
+            <Typography variant="h6" marked="left" gutterBottom sx={{ fontSize: '16px' }}>
               Contact Us
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
@@ -89,7 +89,7 @@ export default function Footer() {
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="h6" marked="left" gutterBottom style={{ fontSize: '16px' }}>
+            <Typography variant="h6" marked="left" gutterBottom sx={{ fontSize: '16px' }}>
               Our Solutions
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>

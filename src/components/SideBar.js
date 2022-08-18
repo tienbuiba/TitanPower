@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -37,13 +36,6 @@ function Sidebar(props) {
   );
 }
 
-Sidebar.propTypes = {
-  archives: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-    }),
-  ).isRequired
-};
+
 
 export default Sidebar;

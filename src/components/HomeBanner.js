@@ -75,12 +75,6 @@ function HomeBanner(props) {
   );
 }
 
-HomeBanner.propTypes = {
-  banner: PropTypes.shape({
-    description: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    titleButton: PropTypes.string.isRequired,
-  }).isRequired,
-};
+
 
 export default HomeBanner;

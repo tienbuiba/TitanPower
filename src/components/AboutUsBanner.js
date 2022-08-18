@@ -63,11 +63,5 @@ function AboutUsBanner(props) {
   );
 }
 
-AboutUsBanner.propTypes = {
-  banner: PropTypes.shape({
-    description: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-};
 
 export default AboutUsBanner;

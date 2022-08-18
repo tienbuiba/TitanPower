@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import { Divider } from '@mui/material';
@@ -32,13 +31,6 @@ function SidebarAboutUs(props) {
   );
 }
 
-SidebarAboutUs.propTypes = {
-  archives: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-    }),
-  ).isRequired
-};
+
 
 export default SidebarAboutUs;

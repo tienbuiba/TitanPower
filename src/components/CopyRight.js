@@ -7,7 +7,7 @@ function CopyRight() {
     <Typography variant="body2" color="text.secondary" align="center" sx={{ mt: 2 }}>
       {'Copyright ©'}
       {new Date().getFullYear()}
-      <Link color="primary" href="">
+      <Link color="primary" href="#">
       {' Titanpower'}
       </Link>{' '}
       . All Rights Reserved.
