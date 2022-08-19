@@ -3,11 +3,11 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Grid } from '@mui/material';
-import HomeBanner from '../components/banners/HomeBanner';
 import Footer from '../components/layout/Footer';
 import AppAppBar from '../components/layout/AppAppBar';
-import banner from '../config/banners/homebanner';
 import MainManufacture from '../components/main/MainManufacture';
+import ManufactureBanner from '../components/banners/ManufactureBanner';
+import manufacturerbanner from '../config/banners/manufacturebanner';
 
 
 const theme = createTheme();
@@ -20,7 +20,7 @@ const Manufacturers = () => {
         <AppAppBar />
       </Container>
       <main>
-        <HomeBanner banner={banner} />
+        <ManufactureBanner banner={manufacturerbanner} />
         <Container maxWidth="lg" >
           <Grid container item xs={12} spacing={2} sx={{ mt: 3, mb: 9 }}>
             <MainManufacture />

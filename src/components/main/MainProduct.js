@@ -88,23 +88,24 @@ function MainProduct() {
     <>
       {mainproduct.map((product) => (
         <Grid item xs={6} sm={3} lg={2} key={product.id}>
-          <CardActionArea component="a" href="/product-details">
-            <Card sx={{ display: 'flex' }}>
-              <Card sx={{ height: '90%', border: '1px solid #ccc' }}>
-                <img
-                  style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
-                  src={product.src} alt={product.altText}
-                />
-                <div>
-                  <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
-                    {product.title}
-                  </Typography>
-                </div>
-              </Card>
+          <CardActionArea component="a" href={`/product-details/${product.id}`}>
+          <Card sx={{ display: 'flex' }}>
+            <Card sx={{ height: '90%', border: '1px solid #ccc' }}>
+              <img
+                style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
+                src={product.src} alt={product.altText}
+              />
+              <div>
+                <Typography component="h2" color="text.secondary" sx={{ mb: 1 }}>
+                  {product.title}
+                </Typography>
+              </div>
             </Card>
-          </CardActionArea>
+          </Card>
+        </CardActionArea>
         </Grid>
-      ))}
+  ))
+}
     </>
   );
 }

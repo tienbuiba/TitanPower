@@ -9,12 +9,13 @@ import product3 from '../../assets/images/ourProducts/image3.jpg'
 
 
 
-const mainproduct = [
+const manufactures = [
   {
     id: 1,
     src: product1,
     altText: 'CapX',
-    title: 'Slide 1'
+    title: 'Slide 1',
+
   },
   {
     id: 2,
@@ -86,18 +87,18 @@ const mainproduct = [
 function MainManufacture() {
   return (
     <>
-      {mainproduct.map((product) => (
-        <Grid item xs={6} sm={3} lg={2} key={product.id}>
-          <CardActionArea component="a" href="/product-details">
+      {manufactures.map((item) => (
+        <Grid item xs={6} sm={3} lg={2} key={item.id}>
+          <CardActionArea component="a" href={`manufacture-detail/${item.id}`}>
             <Card sx={{ display: 'flex' }}>
               <Card sx={{ height: '90%', border: '1px solid #ccc' }}>
                 <img
                   style={{ width: '100%', height: '50%', borderBottom: '1px solid #ccc' }}
-                  src={product.src} alt={product.altText}
+                  src={item.src} alt={item.altText}
                 />
                 <div>
-                  <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
-                    {product.title}
+                <Typography component="h2" color="text.secondary" sx={{ mb: 1 }}>
+                    {item.title}
                   </Typography>
                 </div>
               </Card>

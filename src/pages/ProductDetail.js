@@ -3,22 +3,110 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { ThemeProvider } from '@mui/material/styles';
-import { createTheme, Typography } from '@mui/material';
+import { createTheme, Divider, Typography } from '@mui/material';
 import sections from '.././config/sections'
 import AppAppBar from '../components/layout/AppAppBar';
-import AboutUsBanner from '../components/banners/AboutUsBanner';
 import Footer from '../components/layout/Footer';
-import SidebarAboutUs from '../components/layout/sideBar/SideBarAboutUs';
-import aboutusbanner from '../config/banners/aboutusbanner';
+import { useParams } from 'react-router-dom';
+import product1 from '../assets/images/ourProducts/image1.jpg'
+import product2 from '../assets/images/ourProducts/image2.jpg'
+import product3 from '../assets/images/ourProducts/image3.jpg'
 
 
-const sidebar = {
-  archives: [
-    { title: 'Corporate Profile', url: '#' },
-    { title: 'Company Structure', url: '#' },
-  ]
-};
+const mainproduct = [
+  {
+    id: 1,
+    src: product1,
+    altText: 'CapX',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+  },
+  {
+    id: 2,
+    src: product2,
+    altText: 'Slide 2',
+    title: 'Slide 1',
+    description: 'TitanPower works closely with its principals to create innovative solutions to complement its customers’ products and solutions. Aimed at improving its customers’ operational efficiency and cost competitiveness, the Group has set up research and development (“R&D”) centres in Singapore, China and Vietnam that are helmed by its dedicated team of professional engineers. Established in 2012 and headquartered in VietNam.'
 
+  }, {
+    id: 3,
+    src: product3,
+    altText: 'Slide 3',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  }, {
+    id: 4,
+    src: product1,
+    altText: 'Slide 3',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  },
+  {
+    id: 5,
+    src: product2,
+    altText: 'Slide 3',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  },
+  {
+    id: 6,
+    src: product3,
+    altText: 'Slide 3',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  },
+  {
+    id: 7,
+    src: product1,
+    altText: 'CapX',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  },
+  {
+    id: 8,
+    src: product2,
+    altText: 'Slide 2',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  }, {
+    id: 9,
+    src: product3,
+    altText: 'Slide 3',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  }, {
+    id: 10,
+    src: product1,
+    altText: 'Slide 3',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  },
+  {
+    id: 11,
+    src: product2,
+    altText: 'Slide 3',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  },
+  {
+    id: 12,
+    src: product3,
+    altText: 'Slide 3',
+    title: 'Slide 1',
+    description: 'TitanPower is a leading regional electronics components distributor providing quality components, engineering design services. Use the product search tools to help find the right product for your next design.'
+
+  },
+
+];
 const theme = createTheme();
 
 
@@ -31,36 +119,31 @@ const title = {
 
 
 export default function ProductDetail() {
+
+  const { id } = useParams();
+
+  const result = mainproduct.find((item) => item.id === parseInt(id));
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
         <AppAppBar sections={sections} />
+        <Divider />
       </Container>
       <main>
-        <AboutUsBanner banner={aboutusbanner} />
         <Container maxWidth="lg" sx={{ mb: 12 }} >
-          <Grid container spacing={2} sx={{ mb: 9, display: 'flex', alignItems: 'stretch' }}>
-            <Grid item xs={4} lg={3} sx={{ mt: 3 }}>
-              <SidebarAboutUs
-                archives={sidebar.archives}
-              />
+          <Grid container spacing={2} sx={{ mb: 9, display: 'flex', alignItems: 'center' }}>
+            <Grid item xs={12} lg={4} sx={{ mt: 3 }}>
+              <img src={result.src} style={{ display: 'block', width: '100%', height: '100%' }} alt={result.altText}></img>
             </Grid>
-            <Grid container item xs={8} lg={9} spacing={2} sx={{ mt: 3, mb: 9, display: 'flex', alignItems: 'stretch !important' }}>
+            <Grid container item xs={12} lg={8} spacing={2} sx={{ mt: 3, mb: 9, display: 'flex', alignItems: 'stretch !important' }}>
               <Container sx={{ textAlign: 'left' }} >
                 <Typography align="left" color="text.secondary" sx={title}>
-                  Leading Regional Electronics Components Distributor
+                  {result.title}
                 </Typography>
                 <Typography variant="body1" align="left" color="text.secondary" component="p" sx={{ wordSpacing: '2px', lineHeight: '1.7' }}>
-                  TitanPower Technology Ltd. (the “Company”) and its subsidiaries (TitanPower or the “Group”) are one of the leading regional business-to-business (“B2B”) platforms providing quality electronic components, engineering design services and supply chain management to original equipment manufacturers (“OEMs”), original design manufacturers (“ODMs”) and electronics manufacturing services (“EMS”) in the Asia South region.
-                  <br></br>
-                  <br></br>
-                  TitanPower Technology Ltd. has been recognised in the Top 250 Global Electronics Distributors and Top Global Distributors lists by EBN (a premier online community for global supply chain professionals) and EPSNews (a US premier news, information and data portal and resource centre for electronics and supply chain industries) respectively.
-                  <br></br>
-                  <br></br>
-                  TitanPower works closely with its principals to create innovative solutions to complement its customers’ products and solutions. Aimed at improving its customers’ operational efficiency and cost competitiveness, the Group has set up research and development (“R&D”) centres in Singapore, China and Vietnam that are helmed by its dedicated team of professional engineers.
-
-                  Established in 2012 and headquartered in VietNam.
+                  {result.description}
                 </Typography>
               </Container>
             </Grid>

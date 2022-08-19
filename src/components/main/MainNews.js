@@ -98,7 +98,7 @@ function MainNews() {
                   src={product.src} alt={product.altText}
                 />
                 <div>
-                  <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
+                <Typography component="h2" color="text.secondary" sx={{ mb: 1 }}>
                     {product.title}
                   </Typography>
                 </div>

@@ -107,24 +107,24 @@ export default function Footer() {
               </Box>
             </Box>
           </Grid>
-          <Grid container spacing={2} item xs={12} sx={{ mb: 2 }}>
+          <Grid container spacing={1} item xs={12} sx={{ mb: 2 }}>
             <div style={{ border: '0.1px solid #e0e0e0', width: '100%', marginBottom: '16px' }} />
-            <Grid  xs={12} md={4}>
+            <Grid item xs={12} md={4}>
               <Typography color="text.secondary" align="center" sx={{ fontSize: '13px' }}>
                 Tel：+84-2-8685-9877
               </Typography>
             </Grid>
-            <Grid xs={12} md={4}>
+            <Grid item xs={12} md={4}>
               <Typography color="text.secondary" align="center" sx={{ fontSize: '13px' }}>
                 Add： 3F., No. 84, Duy Tan Dist., Ha Noi City 10000, VietNam
               </Typography>
             </Grid>
-            <Grid xs={12} md={4}>
+            <Grid item xs={12} md={4}>
               <Typography color="text.secondary" align="center" sx={{ fontSize: '13px' }}>
                 E-mail：sales@titanpower@.com
               </Typography>
             </Grid>
-            <Grid xs={12}>
+            <Grid item xs={12}>
               <CopyRight></CopyRight>
             </Grid>
           </Grid>

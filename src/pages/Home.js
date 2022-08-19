@@ -13,11 +13,20 @@ import OurBusiness from '../components/OurBusiness';
 
 const theme = createTheme();
 
-const titleButton ={
-  p:1,
+const titleButton = {
+  p: 1,
   '&:hover': {
     backgroundColor: '#5AB9D1',
     color: '#FFFFFF'
+  }
+}
+
+const titleButtonFinder = {
+  color: '#00aee3',
+  '&:hover': {
+    backgroundColor: '#5AB9D1',
+    color: '#FFFFFF',
+    border: '1px solid transparent'
   }
 }
 
@@ -29,7 +38,7 @@ export default function Home() {
         <AppAppBar />
       </Container>
       <main>
-        <HomeBanner banner={banner} />
+        <HomeBanner banner={banner}/>
         <Container maxWidth="lg" >
           <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
             <Typography
@@ -46,11 +55,11 @@ export default function Home() {
               this layout.
             </Typography>
           </Container>
-          <Grid container spacing={4} sx={{mb:9}} >
-            <OurBusiness />
+          <Grid container spacing={4} sx={{ mb: 9 }} >
+            <OurBusiness/>
           </Grid>
           <Container disableGutters component="main" sx={{ pt: 8, pb: 5 }}>
-            <Divider />
+            <Divider/>
           </Container>
           <Grid container spacing={5} sx={{ mb: 9, display: 'flex', alignItems: 'center' }}>
             <Grid container item xs={12} lg={6}>
@@ -71,7 +80,7 @@ export default function Home() {
               </Typography>
               <Button variant="outlined" href="/products"
                 size="large"
-                sx={{ color: '#00aee3' }}
+                sx={titleButtonFinder}
               >PRODUCT FINDER</Button>
             </Grid>
             <Grid container item xs={12} lg={6} spacing={2} sx={{ mt: 3, mb: 9 }}>
