@@ -7,7 +7,7 @@ import Link from '@mui/material/Link';
 
 
 
-const link= {
+const link = {
   mb: 1, p: 2, fontSize: '14px', textDecoration: 'none',
   '&:hover': {
     backgroundColor: '#5AB9D1',
@@ -23,10 +23,11 @@ function Sidebar(props) {
     <Grid >
       <Paper elevation={0} sx={{ p: 1, bgcolor: 'grey.200' }}>
         <Typography variant="h6" gutterBottom sx={{ mt: 2 }} color="text.secondary">
-          Category        </Typography>
+          Category
+        </Typography>
       </Paper>
       {archives.map((archive) => (
-        <Link display="block" variant="body1" href={archive.url} key={archive.title} 
+        <Link display="block" variant="body1" href={archive.url} key={archive.title}
           sx={link}
         >
           {archive.title}
