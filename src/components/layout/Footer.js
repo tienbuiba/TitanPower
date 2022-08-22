@@ -99,10 +99,10 @@ export default function Footer() {
               <Box component="li" sx={{ py: 0.5, textTransform: 'capitalize' }}>
                 <Link href="/ourbusiness-detail/1" sx={link}>Authorized distributor</Link>
               </Box>
-              <Box component="li" sx={{ py: 0.5, textTransform: 'lowercase' }}>
+              <Box component="li" sx={{ py: 0.5, textTransform: 'capitalize' }}>
                 <Link href="/ourbusiness-detail/2" sx={link}>Global sourcing</Link>
               </Box>
-              <Box component="li" sx={{ py: 0.5, textTransform: 'lowercase' }}>
+              <Box component="li" sx={{ py: 0.5, textTransform: 'capitalize' }}>
                 <Link href="/ourbusiness-detail/3" sx={link}>R&D support</Link>
               </Box>
             </Box>
