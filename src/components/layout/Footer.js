@@ -46,7 +46,7 @@ export default function Footer() {
                   transition: 'opacity .4s'
                 }} />
             </Button>
-            <Typography sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px', mb: 1 }}>TitanPower Systems (Pte) Ltd has achieved ISO 9001:2015 certification</Typography>
+            <Typography sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px', mb: 1 }}>Titan Power Co.,Ltd</Typography>
             <div sx={{ marginTop: '16px' }}>
               <a href="https://www.facebook.com/Titanpowerstore/" style={{ color: '#000' }}>
                 <FacebookIcon sx={linkicon} size="small" />
@@ -58,17 +58,19 @@ export default function Footer() {
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" marked="left" gutterBottom style={{ fontSize: '16px' }}>
-              About Us
+
+              Information
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>Corporate Overview</Link>
+                <Link href="/aboutus" sx={link}>About us</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>Corporate Governance</Link>
+                <Link href="/products" sx={link}>Product</Link>
               </Box>
+
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>Whistle-Blowing Policy</Link>
+                <Link href="/manufacturers" sx={link}>Manufacturers</Link>
               </Box>
             </Box>
           </Grid>
@@ -78,32 +80,30 @@ export default function Footer() {
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>Information</Link>
+                <Link href="/contact" sx={link}>Contact</Link>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>Contact</Link>
+                <Link href="/aboutus" sx={link}>Information</Link>
               </Box>
+
               <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>Products Material Download</Link>
+                <Link href="/policy" sx={link}>Policy</Link>
               </Box>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h6" marked="left" gutterBottom sx={{ fontSize: '16px' }}>
-              Our Solutions
+              Our Business
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
-              <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>All Solutions</Link>
+              <Box component="li" sx={{ py: 0.5, textTransform: 'capitalize' }}>
+                <Link href="/ourbusiness-detail/1" sx={link}>Authorized distributor</Link>
               </Box>
-              <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>IoT | Dev Kit</Link>
+              <Box component="li" sx={{ py: 0.5, textTransform: 'lowercase' }}>
+                <Link href="/ourbusiness-detail/2" sx={link}>Global sourcing</Link>
               </Box>
-              <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>IoT | In-Building</Link>
-              </Box>
-              <Box component="li" sx={{ py: 0.5 }}>
-                <Link href="#" sx={link}>IoT | Infrastructure</Link>
+              <Box component="li" sx={{ py: 0.5, textTransform: 'lowercase' }}>
+                <Link href="/ourbusiness-detail/3" sx={link}>R&D support</Link>
               </Box>
             </Box>
           </Grid>
@@ -111,7 +111,7 @@ export default function Footer() {
             <div style={{ border: '0.1px solid #e0e0e0', width: '100%', marginBottom: '16px' }} />
             <Grid item xs={12} md={4}>
               <Typography color="text.secondary" align="center" sx={{ fontSize: '13px' }}>
-                Tel：+84-2-8685-9877
+                Tel：+84-966-198-246
               </Typography>
             </Grid>
             <Grid item xs={12} md={4}>
@@ -121,7 +121,7 @@ export default function Footer() {
             </Grid>
             <Grid item xs={12} md={4}>
               <Typography color="text.secondary" align="center" sx={{ fontSize: '13px' }}>
-                E-mail：sales@titanpower@.com
+                E-mail：sales@titanpower.com.vn
               </Typography>
             </Grid>
             <Grid item xs={12}>

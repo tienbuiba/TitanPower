@@ -9,7 +9,6 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import FeedIcon from '@mui/icons-material/Feed';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import FeaturedPlayListIcon from '@mui/icons-material/FeaturedPlayList';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -85,7 +84,7 @@ function AppAppBar() {
           </ListItemButton >
         </ListItem>
         <ListItem button key={"Manufacture"} sx={linkAppBarSpecial}>
-          <ListItemButton href='/manufacture'>
+          <ListItemButton href='/manufacturers'>
             <ListItemIcon>
               <FeaturedPlayListIcon />
             </ListItemIcon>
@@ -99,15 +98,6 @@ function AppAppBar() {
               <StorefrontIcon />
             </ListItemIcon>
             <ListItemText primary={"MARKET"} />
-            <Divider />
-          </ListItemButton>
-        </ListItem>
-        <ListItem button key={"News"} sx={linkAppBarSpecial}>
-          <ListItemButton href='/news'>
-            <ListItemIcon>
-              <FeedIcon />
-            </ListItemIcon>
-            <ListItemText primary={"NEWS"} />
             <Divider />
           </ListItemButton>
         </ListItem>
@@ -130,7 +120,6 @@ function AppAppBar() {
       variant="dense">
       <Box sx={{ flex: 0, display: { lg: 'flex', md: 'none', xs: 'none', justifyContent: 'flex-start' } }} />
       <Button size="small" href="/" sx={{}}>
-
         <img src={require('../../assets/images/logo/logo.png')} alt="Apollo" width="100%" height="60px"
           style={{
             opacity: '1',
@@ -152,7 +141,7 @@ function AppAppBar() {
             {section.title}
           </Link>
         ))}
-        <Box sx={{ ml: 3 }}>
+        <Box sx={{ ml: 11 }}>
           <Link href="https://www.facebook.com/Titanpowerstore/" sx={link}  >
             <FacebookIcon sx={{ m: 1 }} size="medium" />
           </Link>

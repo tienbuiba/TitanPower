@@ -1,5 +1,5 @@
 const aboutusbanner = {
-  title: 'Corporate Profile',
+  title: 'AboutUs Information',
   description:
     "Welcome to TitanPower Technology Ltd Investor Relations",
   titleButton: 'GO OUR PROFILE',

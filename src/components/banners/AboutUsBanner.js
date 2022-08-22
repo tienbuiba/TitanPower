@@ -17,15 +17,8 @@ const bannerr = {
 
 }
 
-const title = {
-  fontSize: '14px',
-  marginBottom: '30px',
-}
 
 function AboutUsBanner(props) {
-  const { banner } = props;
-
-
   return (
     <Paper
       sx={bannerr}
@@ -50,7 +43,6 @@ function AboutUsBanner(props) {
             }}
           >
             <Typography variant="h4" color="inherit" gutterBottom>
-              {banner.title}
             </Typography>       
           </Box>
         </Grid>

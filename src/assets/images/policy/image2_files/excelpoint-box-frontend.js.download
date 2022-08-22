@@ -1,0 +1,103 @@
+/**
+ * @file
+ * Author: Ryan Tan
+ * This file is added to builder page and load in view page
+ */
+(function ($) {
+	'use strict';
+
+  (function($,sr){
+
+    // debouncing function from John Hann
+    // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
+    var debounce = function (func, threshold, execAsap) {
+      var timeout;
+
+      return function debounced () {
+        var obj = this, args = arguments;
+        function delayed () {
+          if (!execAsap)
+            func.apply(obj, args);
+          timeout = null;
+        };
+
+        if (timeout)
+          clearTimeout(timeout);
+        else if (execAsap)
+          func.apply(obj, args);
+
+        timeout = setTimeout(delayed, threshold || 100);
+      };
+    };
+
+    // smartresize
+    jQuery.fn[sr] = function(threshold, fn){  return fn ? this.bind('resize', debounce(fn, threshold)) : this.trigger(sr); };
+
+  })(jQuery,'smartresize');
+
+  $(function(){
+    excelpoint_box_make_same_height();
+
+    //$(window).resize(function(){
+    $(window).smartresize(150, function(){
+      excelpoint_box_make_same_height();
+    });
+
+  });
+
+
+  function excelpoint_box_make_same_height(){
+
+    $('.awecontent-section').each(function(index, element){
+      var boxes = $('.excelpoint-box.excelpoint-box__sameHeight', element);
+      if (boxes.length > 0) {
+
+        boxes = $('.excelpoint-box', $(element).parent()).css('height', 'auto');
+
+        var max_height = 0;
+        for(var i=0; i<boxes.length; i++) {
+
+          var height = 0;
+          var siblings = $('.excelpoint-box', $(boxes[i]).parent());
+
+          // Calculate combined height.
+          if (siblings.length > 1) {
+            for(var s=0; s<siblings.length; s++) {
+              height += siblings[s].offsetHeight + 30;
+            }
+            // Remove last padding.
+            height -= 30;
+          }else{
+            height = boxes[i].offsetHeight;
+          }
+
+          if (height > max_height) {
+            max_height = height;
+          }
+
+        }
+        //console.log('max_height:', max_height);
+
+        for(var i=0; i<boxes.length; i++) {
+
+          var siblings = $('.excelpoint-box', $(boxes[i]).parent());
+          if (siblings.length > 1) {
+            $(boxes[i]).parent().css('height', max_height);
+
+            for(var s=1; s<siblings.length; s++) {
+              //console.log('Setting padding top');
+              $('.excelpoint-box-box', siblings[s]).css('padding-top', 30);
+            }
+
+          }else{
+            $(boxes[i]).css('height', max_height);
+          }
+
+        }
+      }else{
+        //console.log('No excelpoint boxes');
+      }
+    });
+  }
+
+})(jQuery);

@@ -7,7 +7,7 @@ import { Divider, Typography } from '@mui/material';
 import sections from '.././config/sections'
 import Footer from '../components/layout/Footer';
 import AppAppBar from '../components/layout/AppAppBar';
-import OurBusiness from '../components/OurBusiness';
+import MainMarket from '../components/main/MainMarket';
 
 const theme = createTheme();
 
@@ -21,7 +21,7 @@ export default function Market() {
       </Container>
       <main>
         <Container maxWidth="lg" sx={{ mt: 3, mb: 12, }}>
-          <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+          <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 3, pb: 3 }}>
             <Typography
               component="h1"
               variant="h4"
@@ -29,15 +29,12 @@ export default function Market() {
               color="text.primary"
               gutterBottom
             >
-              OUR BUSINESS
+              MARKET
             </Typography>
-            <Typography variant="h6" align="center" color="text.secondary" component="p">
-              Quickly build an effective pricing table for your potential customers with
-              this layout.
-            </Typography>
+        
           </Container>
           <Grid container spacing={4} >
-            <OurBusiness />
+            <MainMarket/>
           </Grid>
         </Container>
       </main>

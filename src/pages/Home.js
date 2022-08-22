@@ -3,7 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Button, Divider, Typography } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import OurProductLines from '../components/OurProductLines';
 import HomeBanner from '../components/banners/HomeBanner';
 import Footer from '../components/layout/Footer';
@@ -40,7 +40,7 @@ export default function Home() {
       <main>
         <HomeBanner banner={banner}/>
         <Container maxWidth="lg" >
-          <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+          <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 3, pb: 6 }}>
             <Typography
               component="h1"
               variant="h4"
@@ -51,15 +51,13 @@ export default function Home() {
               OUR BUSINESS
             </Typography>
             <Typography variant="h6" align="center" color="text.secondary" component="p">
-              Quickly build an effective pricing table for your potential customers with
-              this layout.
+            We are an independent electronic component distributor in Vietnam
             </Typography>
           </Container>
-          <Grid container spacing={4} sx={{ mb: 9 }} >
+          <Grid container spacing={4} sx={{ pb: 1 }}>
             <OurBusiness/>
           </Grid>
-          <Container disableGutters component="main" sx={{ pt: 8, pb: 5 }}>
-            <Divider/>
+          <Container disableGutters component="main" sx={{ pb: 5 }}>
           </Container>
           <Grid container spacing={5} sx={{ mb: 9, display: 'flex', alignItems: 'center' }}>
             <Grid container item xs={12} lg={6}>

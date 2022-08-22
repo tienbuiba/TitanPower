@@ -65,11 +65,7 @@ export default function Contact() {
         draggable: true,
         progress: undefined,
       });
-
     }
-
-
-
   }
 
   return (

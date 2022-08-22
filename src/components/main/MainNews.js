@@ -7,7 +7,7 @@ import CardContent from '@mui/material/CardContent';
 
 
 import product1 from '../../assets/images/ourProducts/image1.jpg'
-import product2 from '../../assets/images/ourProducts/image2.jpg'
+import product2 from '../../assets/images/ourProducts/image2.png'
 import product3 from '../../assets/images/ourProducts/image3.jpg'
 
 

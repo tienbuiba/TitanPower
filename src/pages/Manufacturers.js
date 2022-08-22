@@ -22,7 +22,7 @@ const Manufacturers = () => {
       <main>
         <ManufactureBanner banner={manufacturerbanner} />
         <Container maxWidth="lg" >
-          <Grid container item xs={12} spacing={2} sx={{ mt: 3, mb: 9 }}>
+          <Grid container item xs={12} spacing={2} sx={{ mt: 3, mb: 12 }}>
             <MainManufacture />
           </Grid>
         </Container>

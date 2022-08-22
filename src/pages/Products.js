@@ -26,7 +26,7 @@ export default function Product() {
       <main>
       <ProductBanner banner={productbanner}/>
         <Container maxWidth="lg" >
-          <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 8, pb: 6 }}>
+          <Container disableGutters maxWidth="sm" component="main" sx={{ pt: 3, pb: 3 }}>
             <Typography
               component="h1"
               variant="h4"
@@ -37,17 +37,16 @@ export default function Product() {
               PRODUCTS
             </Typography>
             <Typography variant="h6" align="center" color="text.secondary" component="p">
-              Quickly build an effective pricing table for your potential customers with
-              this layout.
+            Leading regional electronics components distributor providing quality components, engineering design services
             </Typography>
           </Container>
-          <Grid container spacing={2} sx={{ mt: 3, mb: 9, display: 'flex', alignItems: 'stretch' }}>
-            <Grid item xs={4} lg={3}>
+          <Grid container spacing={2} sx={{ mt: 3, mb: 9, display: 'flex' }}>
+            <Grid item xs={4} lg={3} >
               <Sidebar
                 archives={sidebar.archives}
               />
             </Grid>
-            <Grid container item xs={8} lg={9} spacing={2} sx={{ mt: 3, mb: 9 }}>
+            <Grid container item xs={8} lg={9} spacing={2} sx={{  mb: 9 }}>
               <MainProduct  />
             </Grid>
           </Grid>

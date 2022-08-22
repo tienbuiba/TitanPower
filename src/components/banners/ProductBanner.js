@@ -20,24 +20,9 @@ const bannerr = {
 
 }
 
-const title = {
-  fontSize: '14px',
-  marginBottom: '30px',
-}
-const titleButton = {
-  color: '#337ab7 ',
-  backgroundColor: '#fff ',
-  '&:hover': {
-    backgroundColor: '#5AB9D1',
-    color: '#FFFFFF'
-  }
-}
+
 
 function ProductBanner(props) {
-  const { banner } = props;
-  const theme = useTheme();
-  const matchDownMD = useMediaQuery(theme.breakpoints.down('md'));
-
 
   return (
     <Paper
@@ -63,7 +48,6 @@ function ProductBanner(props) {
             }}
           >
             <Typography variant="h4" color="inherit" gutterBottom >
-              {banner.title}
             </Typography>
           </Box>
         </Grid>

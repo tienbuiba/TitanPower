@@ -80,7 +80,7 @@ function OurProductLines() {
     <>
       {ourProductLine.map((item) => (
         <Grid item xs={4} sm={3} key={item.id}>
-          <CardActionArea component="a" href="#">
+          <CardActionArea component="a" href="/products">
             <Card >
               <Card sx={{ border: '1px solid #ccc', height: '50%' }}>
                 <img
