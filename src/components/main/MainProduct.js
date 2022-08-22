@@ -1182,9 +1182,9 @@ function MainProduct() {
           <CardActionArea component="a" href={`/product-detail/${product.id}`}>
             <Card sx={{ display: 'flex' }}>
               <Card sx={{ height: '130px', width: '150px', border: '1px solid #ccc' }}>
-                <div style={{}}>
+                <div>
                   <img
-                    style={{ width: '100%', height: '100px', display: 'block', borderBottom: '1px solid #ccc', padding: '5px' }}
+                    style={{ width: '100%', height: '100px', display: 'block', borderBottom: '1px solid #ccc'}}
                     src={product.src} alt={product.altText}
                   />
                 </div>

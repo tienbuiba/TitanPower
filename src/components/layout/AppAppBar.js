@@ -20,6 +20,7 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import sections from '../../config/sections';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Logo from '../../assets/images/Logo/logo.png'
 
 
 const linkAppBar = {
@@ -120,7 +121,7 @@ function AppAppBar() {
       variant="dense">
       <Box sx={{ flex: 0, display: { lg: 'flex', md: 'none', xs: 'none', justifyContent: 'flex-start' } }} />
       <Button size="small" href="/" sx={{}}>
-        <img src={require('../../assets/images/Logo/logo.png')} alt="Apollo" width="100%" height="60px" 
+        <img src={Logo} alt="Apollo" width="100%" height="55px" 
           style={{
             opacity: '1',
             transition: 'opacity .4s',

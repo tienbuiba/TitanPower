@@ -9,7 +9,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import Logo from '../../assets/images/Logo/logo.png'
 
 const link = {
   color: '#858585',
@@ -40,7 +40,7 @@ export default function Footer() {
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
             <Button href="/" sx={{ mb: 1, width: '30%' }}>
-              <img src={require('../../assets/images/Logo/logo.png')} alt="Apollo" width="100%" height="80px"
+              <img src={Logo} alt="Apollo" width="100%" height="80px"
                 style={{
                   opacity: '1',
                   transition: 'opacity .4s',
