@@ -2,11 +2,11 @@
 const sidebar = {
 
   archives: [
-    { title: 'Passives', url: '/products' },
-    { title: 'Semiconductors', url: '/products' },
-    { title: 'Connectivity', url: '/products' },
-    { title: 'Interconect', url: '/products' },
-    { title: 'Electromechanical', url: '/products' },
+    { title: 'Passives', url: '/passives-products' },
+    { title: 'Semiconductors', url: '/semi-products' },
+    { title: 'Connectivity', url: '/connectivity-products' },
+    { title: 'Interconect', url: '/interconect-products' },
+    { title: 'Electromechanical', url: '/electromec-products' },
   ]
 };
 

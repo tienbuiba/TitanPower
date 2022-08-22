@@ -1,7 +1,7 @@
 const contactbanner = {
-  title: 'Striving Towards Excellence',
+  title: 'CREATE GREAT INNOVATION',
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
+    "We are your partner in creating breakthoughs.",
   titleButton: 'OUR PRODUCT LINES',
 };
 

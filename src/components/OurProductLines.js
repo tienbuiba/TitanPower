@@ -2,18 +2,18 @@ import * as React from 'react';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
-import image1 from '../assets/images/ourProductLine/image1.jpg'
-import image2 from '../assets/images/ourProductLine/image2.jpg'
-import image3 from '../assets/images/ourProductLine/image3.jpg'
-import image4 from '../assets/images/ourProductLine/image4.jpg'
-import image5 from '../assets/images/ourProductLine/image5.jpg'
-import image6 from '../assets/images/ourProductLine/image6.jpg'
-import image7 from '../assets/images/ourProductLine/image7.jpg'
-import image8 from '../assets/images/ourProductLine/image8.jpg'
-import image9 from '../assets/images/ourProductLine/image9.jpg'
-import image10 from '../assets/images/ourProductLine/image10.jpg'
-import image11 from '../assets/images/ourProductLine/image11.jpg'
-import image12 from '../assets/images/ourProductLine/image12.jpg'
+import image1 from '../assets/images/product/10.png'
+import image2 from '../assets/images/product/8.jpeg'
+import image3 from '../assets/images/product/13.png'
+import image4 from '../assets/images/product/20.png'
+import image5 from '../assets/images/product/1.png'
+import image6 from '../assets/images/product/48.png'
+import image7 from '../assets/images/product/62.png'
+import image8 from '../assets/images/product/63.png'
+import image9 from '../assets/images/product/51.png'
+import image10 from '../assets/images/product/52.png'
+import image11 from '../assets/images/product/53.jpeg'
+import image12 from '../assets/images/product/54.png'
 
 
 const ourProductLine = [
@@ -79,13 +79,13 @@ function OurProductLines() {
   return (
     <>
       {ourProductLine.map((item) => (
-        <Grid item xs={4} sm={3} key={item.id}>
+        <Grid item xs={6} sm={3} key={item.id}>
           <CardActionArea component="a" href="/products">
             <Card >
-              <Card sx={{ border: '1px solid #ccc', height: '50%' }}>
+              <Card sx={{ border: '1px solid #ccc', height: '150px', width: '100%' }}>
                 <img
                   src={item.src}
-                  style={{ width: '100%', height: '30%' }}
+                  style={{ width: '100%', height: '100%', display: 'block', padding:  '8px' }}
                   alt={item.altText}
                 />
               </Card>

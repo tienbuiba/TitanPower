@@ -551,7 +551,7 @@ Wireless & RF `
   },
   {
 
-    id: 25,
+    id: 29,
     src: product29,
     altText: 'Slide 29',
     title: 'GIGADEVICE',
@@ -1118,7 +1118,7 @@ Hirose is also committed to environmental issues in the manufacture of connector
     id: 63,
     src: product63,
     altText: 'Slide 63',
-    title: 'GP BATTERIES',
+    title: 'GP',
     description: `
     
 GP Batteries International Limited is principally engaged in the development, manufacture and marketing of batteries and battery-related products. Since its establishment under Gold Peak Group in Hong Kong, GP Batteries has rapidly expanded to become one of the world's major suppliers of primary and rechargeable batteries. It is one of the largest consumer battery manufacturers in China. It supplies an extensive range of battery products to original equipment manufacturers, leading battery companies as well as consumer retail markets under its own GP brand name.
@@ -1131,7 +1131,7 @@ GP Batteries' production facilities are located in China, Vietnam and Malaysia, 
     id: 64,
     src: product64,
     altText: 'Slide 64',
-    title: 'VARTA MICROBATTERY',
+    title: 'VARTA',
     description: `
     
 VARTA Microbattery is an internationally leading and globally active manufacturer of retail and OEM batteries and has been operating for more than 125 years. Our customers include the foremost electronics companies, and our range of batteries encompasses all key electrochemical systems, and all shapes and sizes.
@@ -1180,11 +1180,11 @@ function MainProduct() {
       {mainproduct.map((product) => (
         <Grid item xs={6} sm={3} lg={2} key={product.id}>
           <CardActionArea component="a" href={`/product-detail/${product.id}`}>
-            <Card sx={{ display: 'flex' }}>
-              <Card sx={{ height: '130px', width: '150px', border: '1px solid #ccc' }}>
-                <div>
+            <Card >
+              <Card sx={{ height: '120px', border: '1px solid #ccc' }}>
+                <div style={{ height: '90px', width: '100%', border: '1px solid #ccc' }}>
                   <img
-                    style={{ width: '100%', height: '100px', display: 'block', borderBottom: '1px solid #ccc'}}
+                    style={{ width: '100%', height: '100%', display: 'block', borderBottom: '1px solid #ccc', padding: '8px' }}
                     src={product.src} alt={product.altText}
                   />
                 </div>

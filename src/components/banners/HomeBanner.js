@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { Button, useMediaQuery } from '@mui/material';
-import Background from '../../assets/images/banners/banner1.jpg';
+import Background from '../../assets/images/banners/banner4.jpg';
 import { useTheme } from '@mui/system';
 
 
