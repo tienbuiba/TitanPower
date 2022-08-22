@@ -43,7 +43,8 @@ export default function Footer() {
               <img src={require('../../assets/images/Logo/logo.png')} alt="Apollo" width="100%" height="80px"
                 style={{
                   opacity: '1',
-                  transition: 'opacity .4s'
+                  transition: 'opacity .4s',
+                  display: 'block'
                 }} />
             </Button>
             <Typography sx={{ color: '#858585', textDecoration: 'none', fontSize: '14px', mb: 1 }}>Titan Power Co.,Ltd</Typography>
