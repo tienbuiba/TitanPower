@@ -21,6 +21,7 @@ import sections from '../../config/sections';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Logo from '../../assets/images/Logo/logo.png'
+import { useLocation } from 'react-router-dom';
 
 
 const linkAppBar = {
@@ -55,6 +56,13 @@ function AppAppBar() {
   const openToggleDrawer = () => {
     setIsOpen(true);
   };
+
+  const location = useLocation();
+  const selectedIndex = React.useMemo(() => {
+    return sections.findIndex((Item) => Item.url === location.pathname);
+  }, [location]);
+
+
 
   const closeToggleDrawer = () => {
     setIsOpen(false);
@@ -118,8 +126,7 @@ function AppAppBar() {
   return (
     <Toolbar sx={{ p: '0px ' }}
       component="nav"
-      variant="dense">
-      <Box sx={{ flex: 0, display: { lg: 'flex', md: 'none', xs: 'none', justifyContent: 'flex-start' } }} />
+      variant="dense">      
       <Button size="small" href="/" sx={{}}>
         <img src={Logo} alt="Apollo" width="100%" height="55px" 
           style={{
@@ -129,9 +136,17 @@ function AppAppBar() {
           }} />
       </Button>
       <Box sx={{ flex: 1, display: { lg: 'flex', md: 'none', xs: 'none' }, justifyContent: 'flex-end' }}>
-        {sections.map((section) => (
+        {sections.map((section, index) => (
           <Link
-            sx={linkAppBar}
+            sx={{
+              color: () => selectedIndex === index ? "#ff3366" : "#000",
+              p: 1,
+              fontWeight: 500,
+              flexShrink: 0,
+              '&:hover': {
+                color: '#ff3366'
+              },
+            }}
             color="inherit"
             fontSize={matchDownSM ? '14px' : '16px'}
             marginLeft={matchDownSM ? '5px' : '24px'}
@@ -139,6 +154,7 @@ function AppAppBar() {
             noWrap
             key={section.title}
             href={section.url}
+            
           >
             {section.title}
           </Link>

@@ -33,7 +33,7 @@ export default function Contact() {
     if (name !== '' && email !== '' && subject !== '' && message !== '') {
       emailjs.send('service_nryc0it', 'template_cq86nyh', templateParams, '4fIiSEc_2JNSoSB1q')
         .then(function (response) {
-          toast.success('We will send you our best offers, once a week', {
+          toast.success('We will send you our best offers, once a day', {
             position: "top-center",
             autoClose: 2000,
             hideProgressBar: false,

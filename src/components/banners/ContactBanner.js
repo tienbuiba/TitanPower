@@ -55,7 +55,7 @@ function ContactBanner(props) {
             <Typography color="inherit" paragraph sx={title}>
               {banner.description}
             </Typography>
-       
+
           </Box>
         </Grid>
       </Grid>
