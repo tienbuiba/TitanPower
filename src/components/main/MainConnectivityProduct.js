@@ -16,7 +16,7 @@ const mainproduct = [
     id: 49,
     src: product49,
     altText: 'Slide 49',
-    title: 'Quectel ',
+    title: 'QUECTEL ',
     description: `
     Quectel offers high-performance cellular and GNSS modules based on the state-of-art technology. They provide a wide product range of wireless products with complete set of integrated features capable of meeting the most sophisticated requirements from all the M2M market segments. They also provide comprehensive technical support for developers in all the phases of the product development, including but not limited to review and optimization of PCB/RF layout/design/schematics, along with in-depth support on testing and analysis of the end-product to ensure optimal results.
 Products Categories
@@ -97,10 +97,16 @@ Working with our customers, we empower businesses to reimagine their future and 
     `
 
   },
- 
+
 
 
 ];
+const link = {
+  my: 0.5, textTranform: 'uppercase',
+  '&:hover': {
+    color: '#ff3366'
+  }
+}
 
 function MainConnectivityProduct() {
   return (
@@ -117,7 +123,7 @@ function MainConnectivityProduct() {
                   />
                 </div>
                 <div>
-                  <Typography component="h2" color="text.secondary" sx={{ my: 0.5 }}>
+                  <Typography component="h2" color="text.secondary" sx={link}>
                     {product.title}
                   </Typography>
                 </div>

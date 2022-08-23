@@ -71,6 +71,13 @@ The range of applications encompasses everything from micro battery-powered auto
 
 ];
 
+const link = {
+  my: 0.5, textTranform: 'uppercase',
+  '&:hover': {
+    color: '#ff3366'
+  }
+}
+
 function MainElectromecProduct() {
   return (
     <>
@@ -86,7 +93,7 @@ function MainElectromecProduct() {
                   />
                 </div>
                 <div>
-                  <Typography component="h2" color="text.secondary" sx={{ my: 0.5 }}>
+                <Typography component="h2" color="text.secondary" sx={link}>
                     {product.title}
                   </Typography>
                 </div>

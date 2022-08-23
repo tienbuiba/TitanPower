@@ -30,45 +30,6 @@ import product24 from '../../assets/images/product/24.webp'
 import product25 from '../../assets/images/product/25.webp'
 import product26 from '../../assets/images/product/26.png'
 import product27 from '../../assets/images/product/27.png'
-import product28 from '../../assets/images/product/28.jpeg'
-import product29 from '../../assets/images/product/29.jpeg'
-import product30 from '../../assets/images/product/30.png'
-import product31 from '../../assets/images/product/31.webp'
-import product32 from '../../assets/images/product/32.jpeg'
-import product33 from '../../assets/images/product/33.webp'
-import product34 from '../../assets/images/product/34.png'
-import product35 from '../../assets/images/product/35.png'
-import product36 from '../../assets/images/product/36.jpeg'
-import product37 from '../../assets/images/product/37.jpeg'
-import product38 from '../../assets/images/product/38.jpeg'
-import product39 from '../../assets/images/product/39.jpeg'
-import product40 from '../../assets/images/product/40.webp'
-import product41 from '../../assets/images/product/41.jpeg'
-import product42 from '../../assets/images/product/42.png'
-import product43 from '../../assets/images/product/43.png'
-import product44 from '../../assets/images/product/44.png'
-import product45 from '../../assets/images/product/45.png'
-import product46 from '../../assets/images/product/46.png'
-import product47 from '../../assets/images/product/47.jpeg'
-import product48 from '../../assets/images/product/48.png'
-import product49 from '../../assets/images/product/49.png'
-import product50 from '../../assets/images/product/50.png'
-import product51 from '../../assets/images/product/51.png'
-import product52 from '../../assets/images/product/52.png'
-import product53 from '../../assets/images/product/53.jpeg'
-import product54 from '../../assets/images/product/54.png'
-import product55 from '../../assets/images/product/55.png'
-import product56 from '../../assets/images/product/56.png'
-import product57 from '../../assets/images/product/57.png'
-import product58 from '../../assets/images/product/58.jpeg'
-import product59 from '../../assets/images/product/59.png'
-import product60 from '../../assets/images/product/60.png'
-import product61 from '../../assets/images/product/61.jpeg'
-import product62 from '../../assets/images/product/62.png'
-import product63 from '../../assets/images/product/63.png'
-import product64 from '../../assets/images/product/64.png'
-import product65 from '../../assets/images/product/65.png'
-import product66 from '../../assets/images/product/66.jpeg'
 
 
 
@@ -192,7 +153,7 @@ Wireless & RF `
     id: 8,
     src: product8,
     altText: 'Slide 8',
-    title: 'Samsung',
+    title: 'SAMSUNG',
     description: `Samsung Electronics, leads the global market in high-tech electronics manufacturing and digital media. For over 70 years, Samsung has been dedicated to making a better world through diverse businesses that today span advanced technology, semiconductors, skyscraper and plant construction, petrochemicals, fashion, medicine, finance, hotels, and more.
     Products Categories
     •	Capacitors
@@ -375,7 +336,7 @@ Wireless & RF `
     id: 20,
     src: product20,
     altText: 'Slide 20',
-    title: 'Taiyo Yuden',
+    title: 'TAIYO YODEN',
     description: `Since our establishment in 1950, Taiyo Yuden has engaged in research, development and production of capacitors, inductors and circuit modules. Our extensive range of products demonstrate our world-leading support to development and progress in the IT and electronics industries.
     Products Categories
     •	Antennas
@@ -420,7 +381,7 @@ Wireless & RF `
     id: 22,
     src: product22,
     altText: 'Slide 22',
-    title: 'Kyocera AVX',
+    title: 'KYOCERA AVX',
     description: `AVX is a leading worldwide manufacturer and supplier of a broad line of passive electronic components and Interconnects. AVX enjoys significant competitive advantages including the benefit of having research, manufacturing, and customer support facilities in multiple countries located around the world. This assures customers of the most efficient balance of delivery and production capability in response to their just-in-time inventory requirements. With major research and development centers in five locations around the world, AVX has fostered customer relationships involving the design and technology for new and advanced products to fulfill their special end product requirements.
     Products Categories
     •	Antennas
@@ -445,7 +406,7 @@ Wireless & RF `
     id: 23,
     src: product23,
     altText: 'Slide 23',
-    title: 'Murata',
+    title: 'MURATA',
     description: `Murata is a global leader in the design, manufacture and supply of advanced electronic materials, leading edge electronic components, and multi-functional, high-density modules. Murata innovations can be found in a wide range of applications from mobile phones to home appliances, and automotive applications to energy management systems and healthcare devices.
     Products Categories
     •	Antennas
@@ -482,7 +443,7 @@ Wireless & RF `
     id: 25,
     src: product25,
     altText: 'Slide 25',
-    title: 'Panasonic',
+    title: 'PANASONIC',
     description: `Panasonic is one of the largest product manufacturers in the world, comprising 473 companies and employing over 260,000 people. It owns one of the world's largest patent portfolios. And while some may still think of Panasonic merely as a consumer electronics company, it is a global provider of comprehensive solutions for businesses as well as consumers solutions for home, work and travel.
     Products Categories
     •	Cables & Wires
@@ -518,7 +479,7 @@ Wireless & RF `
     id: 27,
     src: product26,
     altText: 'Slide 25',
-    title: 'Vishay',
+    title: 'VISHAY',
     description: `Vishay Intertechnology, Inc. is one of the world's largest manufacturers of discrete semiconductors (diodes, rectifiers, transistors, and optoelectronics and selected ICs) and passive electronic components (resistors, capacitors, inductors, sensors, and transducers). These components are used in virtually all types of electronic devices and equipment, in the industrial, computing, automotive, consumer, telecommunications, military, aerospace, and medical markets. Vishay's product innovations, successful acquisition strategy, and ability to provide one-stop shop service have made Vishay a global industry leader.
     Products Categories
     •	Analog Switch Multiplexers
@@ -538,20 +499,16 @@ Wireless & RF `
     •	Sensors & Transducers
     •	Uncategorized
     `
-  },
-  {
-    id: 28,
-    src: product28,
-    altText: 'Slide 28',
-    title: 'AWINIC',
-    description: `Founded in June 2008, Shanghai Awinic Technology Co.,Ltd is a high-tech company focusing on high-quality and high-performance IC design of Mixed signal, analog, and RF for mobile phone, AI, IoT, automotive electronics, wearables and consumer electronics.
-    Since its establishment, awinic has held high the concept of "meeting customer needs as awinic's only reason to exist; high-quality teams are awinic's greatest asset". With profound understanding of customer needs, awinic innovates and launches new products to the market rapidly, providing customers with high-quality and differentiated products and services. awinic's core team owns over two-decade experience in IC design and management, and has set up a stringent quality assurance system since its founding. The performance and quality of some products have surpassed products of same types by the first-rate international manufacturers. At present, awinic has five product lines: Audio, LED Driver, Power Management, RF Device and Touch&Haptic. Since the establishment, more than 800 products with independent intellectual property rights are widely used worldwide mobile phones as well as IoT brands
-    `
-
   }
 
 
 ];
+const link = {
+  my: 0.5, textTranform: 'uppercase',
+  '&:hover': {
+    color: '#ff3366'
+  }
+}
 
 function MainPassivesProduct() {
   return (
@@ -568,7 +525,7 @@ function MainPassivesProduct() {
                   />
                 </div>
                 <div>
-                  <Typography component="h2" color="text.secondary" sx={{ my: 0.5 }}>
+                <Typography component="h2" color="text.secondary" sx={link}>
                     {product.title}
                   </Typography>
                 </div>

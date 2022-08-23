@@ -3,6 +3,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
+import product28 from '../../assets/images/product/28.jpeg'
 import product29 from '../../assets/images/product/29.jpeg'
 import product30 from '../../assets/images/product/30.png'
 import product31 from '../../assets/images/product/31.webp'
@@ -25,6 +26,17 @@ import product47 from '../../assets/images/product/47.jpeg'
 import product48 from '../../assets/images/product/48.png'
 
 const mainproduct = [
+  
+  {
+    id: 28,
+    src: product28,
+    altText: 'Slide 28',
+    title: 'AWINIC',
+    description: `Founded in June 2008, Shanghai Awinic Technology Co.,Ltd is a high-tech company focusing on high-quality and high-performance IC design of Mixed signal, analog, and RF for mobile phone, AI, IoT, automotive electronics, wearables and consumer electronics.
+    Since its establishment, awinic has held high the concept of "meeting customer needs as awinic's only reason to exist; high-quality teams are awinic's greatest asset". With profound understanding of customer needs, awinic innovates and launches new products to the market rapidly, providing customers with high-quality and differentiated products and services. awinic's core team owns over two-decade experience in IC design and management, and has set up a stringent quality assurance system since its founding. The performance and quality of some products have surpassed products of same types by the first-rate international manufacturers. At present, awinic has five product lines: Audio, LED Driver, Power Management, RF Device and Touch&Haptic. Since the establishment, more than 800 products with independent intellectual property rights are widely used worldwide mobile phones as well as IoT brands
+    `
+
+  },
 
   {
 
@@ -54,7 +66,7 @@ const mainproduct = [
     id: 31,
     src: product31,
     altText: 'Slide 31',
-    title: 'Diodes Inc',
+    title: 'DIODES',
     description: `Diodes Incorporated is a leading global manufacturer and supplier of high-quality, application-specific standard products within the broad discrete, logic, and analog semiconductor markets. Diodes serves the consumer electronics, computing, communications, industrial, and automotive markets.Diodes' products include diodes, rectifiers, transistors, MOSFETs, protection devices, functional specific arrays, single gate logic, amplifiers and comparators, Hall-effect and temperature sensors; power management devices, including LED drivers, DC-DC switching and linear voltage regulators, and voltage references along with special function devices, such as USB power switches, load switches, voltage supervisors, and motor controllers.
     Products Categories
     •	Amplifiers
@@ -154,7 +166,7 @@ Products Categories
     id: 37,
     src: product37,
     altText: 'Slide 37',
-    title: 'Cree LED',
+    title: 'CREE LED',
     description: `
     Cree LED, a Smart Global Holdings company, delivers best-in-class technology and breakthrough solutions for our focus applications: High Power General Lighting, Automotive, Video Screens and Specialty Lighting. Cree LED offers the industry’s broadest portfolio of application-optimized LEDs that lead the industry in lumen density, intensity, efficacy, optical control and reliability.
 Products Categories
@@ -172,7 +184,7 @@ Products Categories
     id: 38,
     src: product38,
     altText: 'Slide 38',
-    title: 'Nexperia',
+    title: 'NEXPERIA',
     description: `
     Nexperia is a dedicated global leader in Small Signal Discretes, Logic and PowerMOS devices. Originally part of Philips and more recently NXP, this new company became independent at the beginning of 2017.
 
@@ -206,9 +218,9 @@ Products Categories
     id: 39,
     src: product39,
     altText: 'Slide 39',
-    title: 'Onsemi',
+    title: 'ONSEMI',
     description: `
-    onsemi is a preferred supplier of high performance silicon solutions to customers in the computing, communications, consumer, automotive, medical, industrial, and military/aerospace markets. The company's broad portfolio includes power management, signal, logic, discrete, and custom devices. onsemi operates a network of manufacturing facilities, sales offices and design centers in key markets throughout North America, Europe, and the Asia Pacific regions.
+    Onsemi is a preferred supplier of high performance silicon solutions to customers in the computing, communications, consumer, automotive, medical, industrial, and military/aerospace markets. The company's broad portfolio includes power management, signal, logic, discrete, and custom devices. onsemi operates a network of manufacturing facilities, sales offices and design centers in key markets throughout North America, Europe, and the Asia Pacific regions.
 Products Categories
 •	Amplifiers
 •	Analog Switch Multiplexers
@@ -252,7 +264,7 @@ With the development and maturity of the smart phone technology, consumers will 
     id: 41,
     src: product41,
     altText: 'Slide 41',
-    title: 'Silergy',
+    title: 'SILERGY',
     description: `
     Silergy Corp. designs, manufactures and sells a range of integrated circuits (ICs). The company offers DC/DC regulators, power management ICs, LED backlight regulators, AC-DC LED lighting drivers and metering/energy measurement SOCs. Its products are used in automotive, industrial, computer and other devices.
 Products Categories
@@ -372,6 +384,12 @@ UNISOC possesses rare large-scale chip integration and chipset production capabi
 
 
 ];
+const link = {
+  my: 0.5, textTranform: 'uppercase',
+  '&:hover': {
+    color: '#ff3366'
+  }
+}
 
 function MainSemiProduct() {
   return (
@@ -388,7 +406,7 @@ function MainSemiProduct() {
                   />
                 </div>
                 <div>
-                  <Typography component="h2" color="text.secondary" sx={{ my: 0.5 }}>
+                  <Typography component="h2" color="text.secondary" sx={link}>
                     {product.title}
                   </Typography>
                 </div>

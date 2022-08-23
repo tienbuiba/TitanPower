@@ -15,11 +15,13 @@ import image6 from '../../assets/images/market/image6.jpg'
 
 
 const market = [
+
   {
     id: 1,
     src: image1,
     altText: 'Slide 1',
-    title: `Telecom
+    heading: 'Telecom',
+    title: `
     Antenna, Radar, Base station
     `,
     description: `Vietnam’s telecommunication market is becoming more attractive to foreign investors as it has returned to the growth path in the first half of 2019 after a long period of saturation.
@@ -33,29 +35,21 @@ const market = [
     id: 2,
     src: image2,
     altText: 'Slide 2',
-    title: ` Mobile, Computer
+    heading: 'Mobile',
+    title: `  Computer
     Laptop, Tablet
     `,
     description: `Vietnam has great potential, which will help digital transformation proceed quickly and with fewer risks than many other countries. A report from We Are Social and Hootsuite showed a high proportion of internet and mobile phone users. Vietnam has 96.9 million people, but has 145.8 million mobile phone subscribers (150 percent of population), 68.17 million internet users and 65 million social network users.
     Around 94 percent of Vietnamese own mobile devices, 65 percent use laptops and desktop computers, and 22 percent use tablets.Demand for mobile services and internet has been increasing rapidly.Meanwhile, because of the stiff competition, businesses have to carry out digital transformation in order to grow and compete with rivals.A survey conducted in Asia Pacific by Microsoft found that the impact of the digital transformation on GDP would be 60 percent in 2021.Meanwhile, a study by Google and Temasek predicted that Vietnam’s digital economy may have value of $30 billion by 2025.`
 
-  }, {
-    id: 3,
-    src: image3,
-    altText: 'Slide 3',
-    title: `Industry
-    Automation, Medical, Machine
-    `,
-    description: `Vietnam’s machinery and equipment industry has been growing significantly, contributing to increased GDP and sub-sector industries. Vietnam Briefing takes an in-depth look and highlights key trends and opportunities for foreign investors in the industry as Vietnam pushes ahead with its growing economy.
-    Vietnam’s machinery and equipment sector has expanded substantially in the last decade. This is proved by the net revenue recorded by companies operating in this industry increasing at a compound annual growth rate (CAGR) of 14.3 percent between 2010 and 2019. Until 2020, there were over 2,200 companies specializing in the production of machinery and equipment in Vietnam, earning total revenue of US$4.6 billion.
-    Major suppliers of machinery to Vietnam have been Asian countries including China, South Korea, Japan, and Taiwan. These accounted for around 70 percent of the foreign sources for machinery in the Vietnamese market owing to their competitive prices and prevailing consumer preference. Other notable exporters have been ASEAN nations including Thailand, Malaysia, and Indonesia as well as western nations such as Germany, US, and Italy.`
-
   },
+
   {
     id: 4,
     src: image4,
     altText: 'Slide 4',
-    title: `Automotive
+    heading: 'Automotive',
+    title: `
     Electric Car, Electric Bike
     
     `,
@@ -69,8 +63,8 @@ const market = [
     id: 5,
     src: image5,
     altText: 'Slide 5',
-    title: `
-    IOT module,
+    heading: '  IOT module',
+    title: `  
     IOT devices,
      Drone   
     `,
@@ -82,14 +76,28 @@ const market = [
     id: 6,
     src: image6,
     altText: 'Slide 6',
-    title: `Home appliance
+    heading: 'Home appliance',
+    title: `
     Smart home, Lighting
     
     `,
     description: `Vietnam has a young population structure, abundant labor force and low cost, which provides favorable conditions for the development of home appliance industry and attracts many foreign home appliance companies to settle in Vietnam, such as Midea, Haier, Toshiba, Panasonic, Sharp, Gree, Nepal, Samsung, LG, AQUA and other home appliance companies have invested and built factories in Vietnam.
     In terms of economic growth, Vietnam's economy has maintained rapid growth for many years since the 1986 reform. 2020 Vietnam's GDP grew by 2.91%. 2021 Vietnam's GDP rose to 362.619 billion USD, a real growth of 2.58%. Despite the decline in growth rate due to the New Crown Pneumonia epidemic, it is still one of the countries in the world that have achieved positive economic growth. Foreign investment is also increasingly favorable to Vietnam. The processing and manufacturing industry has become the most attractive area for foreign investment. This indicates that foreign investors have placed high trust in Vietnam in the global supply chain. 2021 yearly Vietnam attracted a total of $30 billion in foreign investment, up 2% year-on-year`
 
-  }
+  },
+ 
+  {
+    id: 3,
+    src: image3,
+    altText: 'Slide 3',
+    heading: 'Industry',
+    title: `Automation, Medical, Machine
+    `,
+    description: `Vietnam’s machinery and equipment industry has been growing significantly, contributing to increased GDP and sub-sector industries. Vietnam Briefing takes an in-depth look and highlights key trends and opportunities for foreign investors in the industry as Vietnam pushes ahead with its growing economy.
+    Vietnam’s machinery and equipment sector has expanded substantially in the last decade. This is proved by the net revenue recorded by companies operating in this industry increasing at a compound annual growth rate (CAGR) of 14.3 percent between 2010 and 2019. Until 2020, there were over 2,200 companies specializing in the production of machinery and equipment in Vietnam, earning total revenue of US$4.6 billion.
+    Major suppliers of machinery to Vietnam have been Asian countries including China, South Korea, Japan, and Taiwan. These accounted for around 70 percent of the foreign sources for machinery in the Vietnamese market owing to their competitive prices and prevailing consumer preference. Other notable exporters have been ASEAN nations including Thailand, Malaysia, and Indonesia as well as western nations such as Germany, US, and Italy.`
+
+  },
 
 ];
 function MainMarket() {
@@ -107,8 +115,10 @@ function MainMarket() {
                     alt="imagse"
                   />
                 </div>
-
-                <div style={{ padding: '16px' }}>
+                <div style={{ padding: '4px' }}>
+                <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
+                    {item.heading}
+                  </Typography>
                   <Typography component="h2" variant="h5" sx={{ mb: 1 }}>
                     {item.title}
                   </Typography>

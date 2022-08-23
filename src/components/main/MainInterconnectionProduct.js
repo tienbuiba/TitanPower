@@ -3,60 +3,6 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
-import product1 from '../../assets/images/product/1.png'
-import product2 from '../../assets/images/product/2.png'
-import product3 from '../../assets/images/product/3.png'
-import product4 from '../../assets/images/product/4.jpeg'
-import product5 from '../../assets/images/product/5.jpeg'
-import product6 from '../../assets/images/product/6.png'
-import product7 from '../../assets/images/product/7.webp'
-import product8 from '../../assets/images/product/8.jpeg'
-import product9 from '../../assets/images/product/9.png'
-import product10 from '../../assets/images/product/10.png'
-import product11 from '../../assets/images/product/11.jpeg'
-import product12 from '../../assets/images/product/12.jpeg'
-import product13 from '../../assets/images/product/13.png'
-import product14 from '../../assets/images/product/14.png'
-import product15 from '../../assets/images/product/15.jpeg'
-import product16 from '../../assets/images/product/16.png'
-import product17 from '../../assets/images/product/17.jpeg'
-import product18 from '../../assets/images/product/18.png'
-import product19 from '../../assets/images/product/19.webp'
-import product20 from '../../assets/images/product/20.png'
-import product21 from '../../assets/images/product/21.jpeg'
-import product22 from '../../assets/images/product/22.png'
-import product23 from '../../assets/images/product/23.jpeg'
-import product24 from '../../assets/images/product/24.webp'
-import product25 from '../../assets/images/product/25.webp'
-import product26 from '../../assets/images/product/26.png'
-import product27 from '../../assets/images/product/27.png'
-import product28 from '../../assets/images/product/28.jpeg'
-import product29 from '../../assets/images/product/29.jpeg'
-import product30 from '../../assets/images/product/30.png'
-import product31 from '../../assets/images/product/31.webp'
-import product32 from '../../assets/images/product/32.jpeg'
-import product33 from '../../assets/images/product/33.webp'
-import product34 from '../../assets/images/product/34.png'
-import product35 from '../../assets/images/product/35.png'
-import product36 from '../../assets/images/product/36.jpeg'
-import product37 from '../../assets/images/product/37.jpeg'
-import product38 from '../../assets/images/product/38.jpeg'
-import product39 from '../../assets/images/product/39.jpeg'
-import product40 from '../../assets/images/product/40.webp'
-import product41 from '../../assets/images/product/41.jpeg'
-import product42 from '../../assets/images/product/42.png'
-import product43 from '../../assets/images/product/43.png'
-import product44 from '../../assets/images/product/44.png'
-import product45 from '../../assets/images/product/45.png'
-import product46 from '../../assets/images/product/46.png'
-import product47 from '../../assets/images/product/47.jpeg'
-import product48 from '../../assets/images/product/48.png'
-import product49 from '../../assets/images/product/49.png'
-import product50 from '../../assets/images/product/50.png'
-import product51 from '../../assets/images/product/51.png'
-import product52 from '../../assets/images/product/52.png'
-import product53 from '../../assets/images/product/53.jpeg'
-import product54 from '../../assets/images/product/54.png'
 import product55 from '../../assets/images/product/55.png'
 import product56 from '../../assets/images/product/56.png'
 import product57 from '../../assets/images/product/57.png'
@@ -65,24 +11,15 @@ import product59 from '../../assets/images/product/59.png'
 import product60 from '../../assets/images/product/60.png'
 import product61 from '../../assets/images/product/61.jpeg'
 import product62 from '../../assets/images/product/62.png'
-import product63 from '../../assets/images/product/63.png'
-import product64 from '../../assets/images/product/64.png'
-import product65 from '../../assets/images/product/65.png'
-import product66 from '../../assets/images/product/66.jpeg'
-
-
-
 
 
 
 const mainproduct = [
-
- 
   {
     id: 55,
     src: product55,
     altText: 'Slide 55',
-    title: 'Amphenol',
+    title: 'AMPHENOL',
     description: `
     Amphenol designs, manufactures and markets electrical, electronic and fiber optic connectors, coaxial and flat-ribbon cable, and interconnect systems. The primary end markets for the company's products are communications and information processing markets, including cable television, cellular telephone and data communication and information processing systems; aerospace and military electronics; and automotive, rail and other transportation and industrial applications.
 Products Categories
@@ -126,7 +63,7 @@ Products Categories
     id: 57,
     src: product57,
     altText: 'Slide 57',
-    title: 'Molex',
+    title: 'MOLEX',
     description: `
     Molex believes in the transformative power of creating connections. As a leading global provider of connector solutions, Molex brings engineering excellence, trusted relationships and an unparalleled commitment to quality and reliability to help customers across industries improve lives. Trusted for more than 80 years, Molex offers world-class design, manufacturing and a portfolio of 100,000+ innovative products. We’re doing more than developing solutions, we’re Creating Connections for Life.
 Products Categories
@@ -184,7 +121,7 @@ Their exclusive automated manufacturing processes provide consistent high qualit
     id: 61,
     src: product61,
     altText: 'Slide 61',
-    title: 'Kyocera',
+    title: 'KYOCERA',
     description: `
     Kyocera Corporation acquired Optrex Corporation in 2012, expanding and strengthening Kyocera's global LCD business by adding a production, sales, marketing and R&D base with nearly four decades of experience and continuous innovation in LCD technology.
 
@@ -220,6 +157,13 @@ Hirose is also committed to environmental issues in the manufacture of connector
 
 ];
 
+const link = {
+  my: 0.5, textTranform: 'uppercase',
+  '&:hover': {
+    color: '#ff3366'
+  }
+}
+
 function MainInterconnectionProduct() {
   return (
     <>
@@ -235,7 +179,7 @@ function MainInterconnectionProduct() {
                   />
                 </div>
                 <div>
-                  <Typography component="h2" color="text.secondary" sx={{ my: 0.5 }}>
+                  <Typography component="h2" color="text.secondary" sx={link}>
                     {product.title}
                   </Typography>
                 </div>

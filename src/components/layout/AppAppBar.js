@@ -24,15 +24,6 @@ import Logo from '../../assets/images/Logo/logo.png'
 import { useLocation } from 'react-router-dom';
 
 
-const linkAppBar = {
-  color: '#000',
-  p: 1,
-  fontWeight: 500,
-  flexShrink: 0,
-  '&:hover': {
-    color: '#ff3366'
-  }
-}
 
 const link = {
   '&:hover': {
@@ -135,7 +126,7 @@ function AppAppBar() {
             display: 'block'
           }} />
       </Button>
-      <Box sx={{ flex: 1, display: { lg: 'flex', md: 'none', xs: 'none' }, justifyContent: 'flex-end' }}>
+      <Box sx={{ flex: 1, display: { lg: '-webkit-flex', md: 'none', xs: 'none' }, justifyContent: 'flex-end' }}>
         {sections.map((section, index) => (
           <Link
             sx={{
@@ -168,7 +159,7 @@ function AppAppBar() {
           </Link>
         </Box>
       </Box>
-      <Box sx={{ flex: 1, display: { lg: 'none', md: 'flex', xs: 'flex' }, justifyContent: 'flex-end' }}>
+      <Box sx={{ flex: 1, display: { lg: 'none', md: '-webkit-flex', xs: 'flex' }, justifyContent: 'flex-end' }}>
         <IconButton
           size="large"
           aria-label="menu"

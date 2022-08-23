@@ -80,7 +80,7 @@ export default function AboutUs() {
                   <br></br>
                   2) 100% authentic products
                   <br></br>
-                  3)  Flexible and very quick action
+                  3) Flexible and very quick action
                   <br></br>
                   4) Cutting lead times by allocated parts
                   <br></br>
