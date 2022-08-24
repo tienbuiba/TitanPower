@@ -10,7 +10,7 @@ import Footer from '../components/layout/Footer';
 import { useParams } from 'react-router-dom';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import product1 from '../assets/images/product/1.png'
-import product2 from '../assets/images/product/2.png'
+import product2 from '../assets/images/product/2.jpg'
 import product3 from '../assets/images/product/3.png'
 import product4 from '../assets/images/product/4.jpeg'
 import product5 from '../assets/images/product/5.jpeg'
@@ -20,39 +20,39 @@ import product8 from '../assets/images/product/8.jpeg'
 import product9 from '../assets/images/product/9.png'
 import product10 from '../assets/images/product/10.png'
 import product11 from '../assets/images/product/11.jpeg'
-import product12 from '../assets/images/product/12.jpeg'
+import product12 from '../assets/images/product/12.jpg'
 import product13 from '../assets/images/product/13.png'
-import product14 from '../assets/images/product/14.png'
+import product14 from '../assets/images/product/14.jpg'
 import product15 from '../assets/images/product/15.jpeg'
 import product16 from '../assets/images/product/16.png'
 import product17 from '../assets/images/product/17.jpeg'
-import product18 from '../assets/images/product/18.png'
-import product19 from '../assets/images/product/19.webp'
+import product18 from '../assets/images/product/18.webp'
+import product19 from '../assets/images/product/19.jpg'
 import product20 from '../assets/images/product/20.png'
 import product21 from '../assets/images/product/21.jpeg'
-import product22 from '../assets/images/product/22.png'
-import product23 from '../assets/images/product/23.jpeg'
+import product22 from '../assets/images/product/22.jpg'
+import product23 from '../assets/images/product/23.png'
 import product24 from '../assets/images/product/24.webp'
 import product25 from '../assets/images/product/25.webp'
 import product26 from '../assets/images/product/26.png'
 import product27 from '../assets/images/product/27.png'
-import product28 from '../assets/images/product/28.jpeg'
+import product28 from '../assets/images/product/28.jpg'
 import product29 from '../assets/images/product/29.jpeg'
 import product30 from '../assets/images/product/30.png'
-import product31 from '../assets/images/product/31.webp'
-import product32 from '../assets/images/product/32.jpeg'
-import product33 from '../assets/images/product/33.webp'
+import product31 from '../assets/images/product/31.png'
+import product32 from '../assets/images/product/32.png'
+import product33 from '../assets/images/product/33.jfif'
 import product34 from '../assets/images/product/34.png'
 import product35 from '../assets/images/product/35.png'
-import product36 from '../assets/images/product/36.jpeg'
+import product36 from '../assets/images/product/36.jfif'
 import product37 from '../assets/images/product/37.jpeg'
 import product38 from '../assets/images/product/38.jpeg'
 import product39 from '../assets/images/product/39.jpeg'
-import product40 from '../assets/images/product/40.webp'
-import product41 from '../assets/images/product/41.jpeg'
+import product40 from '../assets/images/product/40.jpg'
+import product41 from '../assets/images/product/41.png'
 import product42 from '../assets/images/product/42.png'
 import product43 from '../assets/images/product/43.png'
-import product44 from '../assets/images/product/44.png'
+import product44 from '../assets/images/product/44.webp'
 import product45 from '../assets/images/product/45.png'
 import product46 from '../assets/images/product/46.png'
 import product47 from '../assets/images/product/47.jpeg'
@@ -61,20 +61,20 @@ import product49 from '../assets/images/product/49.png'
 import product50 from '../assets/images/product/50.png'
 import product51 from '../assets/images/product/51.png'
 import product52 from '../assets/images/product/52.png'
-import product53 from '../assets/images/product/53.jpeg'
+import product53 from '../assets/images/product/53.jfif'
 import product54 from '../assets/images/product/54.png'
 import product55 from '../assets/images/product/55.png'
 import product56 from '../assets/images/product/56.png'
 import product57 from '../assets/images/product/57.png'
 import product58 from '../assets/images/product/58.jpeg'
-import product59 from '../assets/images/product/59.png'
+import product59 from '../assets/images/product/59.webp'
 import product60 from '../assets/images/product/60.png'
-import product61 from '../assets/images/product/61.jpeg'
-import product62 from '../assets/images/product/62.png'
+import product61 from '../assets/images/product/61.png'
+import product62 from '../assets/images/product/62.jpg'
 import product63 from '../assets/images/product/63.png'
 import product64 from '../assets/images/product/64.png'
 import product65 from '../assets/images/product/65.png'
-import product66 from '../assets/images/product/66.jpeg'
+import product66 from '../assets/images/product/66.png'
 
 
 const mainproduct = [
@@ -194,7 +194,7 @@ Wireless & RF `
     id: 8,
     src: product8,
     altText: 'Slide 8',
-    title: 'Samsung',
+    title: 'SAMSUNG',
     description: `Samsung Electronics, leads the global market in high-tech electronics manufacturing and digital media. For over 70 years, Samsung has been dedicated to making a better world through diverse businesses that today span advanced technology, semiconductors, skyscraper and plant construction, petrochemicals, fashion, medicine, finance, hotels, and more.
     Products Categories
     •	Capacitors
@@ -377,7 +377,7 @@ Wireless & RF `
     id: 20,
     src: product20,
     altText: 'Slide 20',
-    title: 'Taiyo Yuden',
+    title: 'TAIYO YUDEN',
     description: `Since our establishment in 1950, Taiyo Yuden has engaged in research, development and production of capacitors, inductors and circuit modules. Our extensive range of products demonstrate our world-leading support to development and progress in the IT and electronics industries.
     Products Categories
     •	Antennas
@@ -422,7 +422,7 @@ Wireless & RF `
     id: 22,
     src: product22,
     altText: 'Slide 22',
-    title: 'Kyocera AVX',
+    title: 'AVX',
     description: `AVX is a leading worldwide manufacturer and supplier of a broad line of passive electronic components and Interconnects. AVX enjoys significant competitive advantages including the benefit of having research, manufacturing, and customer support facilities in multiple countries located around the world. This assures customers of the most efficient balance of delivery and production capability in response to their just-in-time inventory requirements. With major research and development centers in five locations around the world, AVX has fostered customer relationships involving the design and technology for new and advanced products to fulfill their special end product requirements.
     Products Categories
     •	Antennas
@@ -447,7 +447,7 @@ Wireless & RF `
     id: 23,
     src: product23,
     altText: 'Slide 23',
-    title: 'Murata',
+    title: 'MURATA',
     description: `Murata is a global leader in the design, manufacture and supply of advanced electronic materials, leading edge electronic components, and multi-functional, high-density modules. Murata innovations can be found in a wide range of applications from mobile phones to home appliances, and automotive applications to energy management systems and healthcare devices.
     Products Categories
     •	Antennas
@@ -484,7 +484,7 @@ Wireless & RF `
     id: 25,
     src: product25,
     altText: 'Slide 25',
-    title: 'Panasonic',
+    title: 'PANASONIC',
     description: `Panasonic is one of the largest product manufacturers in the world, comprising 473 companies and employing over 260,000 people. It owns one of the world's largest patent portfolios. And while some may still think of Panasonic merely as a consumer electronics company, it is a global provider of comprehensive solutions for businesses as well as consumers solutions for home, work and travel.
     Products Categories
     •	Cables & Wires
@@ -520,7 +520,7 @@ Wireless & RF `
     id: 27,
     src: product26,
     altText: 'Slide 25',
-    title: 'Vishay',
+    title: 'VISHAY',
     description: `Vishay Intertechnology, Inc. is one of the world's largest manufacturers of discrete semiconductors (diodes, rectifiers, transistors, and optoelectronics and selected ICs) and passive electronic components (resistors, capacitors, inductors, sensors, and transducers). These components are used in virtually all types of electronic devices and equipment, in the industrial, computing, automotive, consumer, telecommunications, military, aerospace, and medical markets. Vishay's product innovations, successful acquisition strategy, and ability to provide one-stop shop service have made Vishay a global industry leader.
     Products Categories
     •	Analog Switch Multiplexers
@@ -553,7 +553,7 @@ Wireless & RF `
   },
   {
 
-    id: 25,
+    id: 29,
     src: product29,
     altText: 'Slide 29',
     title: 'GIGADEVICE',
@@ -579,7 +579,7 @@ Wireless & RF `
     id: 31,
     src: product31,
     altText: 'Slide 31',
-    title: 'Diodes Inc',
+    title: 'DIODES',
     description: `Diodes Incorporated is a leading global manufacturer and supplier of high-quality, application-specific standard products within the broad discrete, logic, and analog semiconductor markets. Diodes serves the consumer electronics, computing, communications, industrial, and automotive markets.Diodes' products include diodes, rectifiers, transistors, MOSFETs, protection devices, functional specific arrays, single gate logic, amplifiers and comparators, Hall-effect and temperature sensors; power management devices, including LED drivers, DC-DC switching and linear voltage regulators, and voltage references along with special function devices, such as USB power switches, load switches, voltage supervisors, and motor controllers.
     Products Categories
     •	Amplifiers
@@ -679,7 +679,7 @@ Products Categories
     id: 37,
     src: product37,
     altText: 'Slide 37',
-    title: 'Cree LED',
+    title: 'CREE LED',
     description: `
     Cree LED, a Smart Global Holdings company, delivers best-in-class technology and breakthrough solutions for our focus applications: High Power General Lighting, Automotive, Video Screens and Specialty Lighting. Cree LED offers the industry’s broadest portfolio of application-optimized LEDs that lead the industry in lumen density, intensity, efficacy, optical control and reliability.
 Products Categories
@@ -697,7 +697,7 @@ Products Categories
     id: 38,
     src: product38,
     altText: 'Slide 38',
-    title: 'Nexperia',
+    title: 'NEXPERIA',
     description: `
     Nexperia is a dedicated global leader in Small Signal Discretes, Logic and PowerMOS devices. Originally part of Philips and more recently NXP, this new company became independent at the beginning of 2017.
 
@@ -731,9 +731,9 @@ Products Categories
     id: 39,
     src: product39,
     altText: 'Slide 39',
-    title: 'Onsemi',
+    title: 'ONSEMI',
     description: `
-    onsemi is a preferred supplier of high performance silicon solutions to customers in the computing, communications, consumer, automotive, medical, industrial, and military/aerospace markets. The company's broad portfolio includes power management, signal, logic, discrete, and custom devices. onsemi operates a network of manufacturing facilities, sales offices and design centers in key markets throughout North America, Europe, and the Asia Pacific regions.
+    Onsemi is a preferred supplier of high performance silicon solutions to customers in the computing, communications, consumer, automotive, medical, industrial, and military/aerospace markets. The company's broad portfolio includes power management, signal, logic, discrete, and custom devices. onsemi operates a network of manufacturing facilities, sales offices and design centers in key markets throughout North America, Europe, and the Asia Pacific regions.
 Products Categories
 •	Amplifiers
 •	Analog Switch Multiplexers
@@ -777,7 +777,7 @@ With the development and maturity of the smart phone technology, consumers will 
     id: 41,
     src: product41,
     altText: 'Slide 41',
-    title: 'Silergy',
+    title: 'SILERGY',
     description: `
     Silergy Corp. designs, manufactures and sells a range of integrated circuits (ICs). The company offers DC/DC regulators, power management ICs, LED backlight regulators, AC-DC LED lighting drivers and metering/energy measurement SOCs. Its products are used in automotive, industrial, computer and other devices.
 Products Categories
@@ -898,7 +898,7 @@ UNISOC possesses rare large-scale chip integration and chipset production capabi
     id: 49,
     src: product49,
     altText: 'Slide 49',
-    title: 'Quectel ',
+    title: 'QUECTEL',
     description: `
     Quectel offers high-performance cellular and GNSS modules based on the state-of-art technology. They provide a wide product range of wireless products with complete set of integrated features capable of meeting the most sophisticated requirements from all the M2M market segments. They also provide comprehensive technical support for developers in all the phases of the product development, including but not limited to review and optimization of PCB/RF layout/design/schematics, along with in-depth support on testing and analysis of the end-product to ensure optimal results.
 Products Categories
@@ -983,7 +983,7 @@ Working with our customers, we empower businesses to reimagine their future and 
     id: 55,
     src: product55,
     altText: 'Slide 55',
-    title: 'Amphenol',
+    title: 'AMPHENOL',
     description: `
     Amphenol designs, manufactures and markets electrical, electronic and fiber optic connectors, coaxial and flat-ribbon cable, and interconnect systems. The primary end markets for the company's products are communications and information processing markets, including cable television, cellular telephone and data communication and information processing systems; aerospace and military electronics; and automotive, rail and other transportation and industrial applications.
 Products Categories
@@ -1027,7 +1027,7 @@ Products Categories
     id: 57,
     src: product57,
     altText: 'Slide 57',
-    title: 'Molex',
+    title: 'MOLEX',
     description: `
     Molex believes in the transformative power of creating connections. As a leading global provider of connector solutions, Molex brings engineering excellence, trusted relationships and an unparalleled commitment to quality and reliability to help customers across industries improve lives. Trusted for more than 80 years, Molex offers world-class design, manufacturing and a portfolio of 100,000+ innovative products. We’re doing more than developing solutions, we’re Creating Connections for Life.
 Products Categories
@@ -1085,7 +1085,7 @@ Their exclusive automated manufacturing processes provide consistent high qualit
     id: 61,
     src: product61,
     altText: 'Slide 61',
-    title: 'Kyocera',
+    title: 'KYOCERA',
     description: `
     Kyocera Corporation acquired Optrex Corporation in 2012, expanding and strengthening Kyocera's global LCD business by adding a production, sales, marketing and R&D base with nearly four decades of experience and continuous innovation in LCD technology.
 
@@ -1120,7 +1120,7 @@ Hirose is also committed to environmental issues in the manufacture of connector
     id: 63,
     src: product63,
     altText: 'Slide 63',
-    title: 'GP BATTERIES',
+    title: 'GP',
     description: `
     
 GP Batteries International Limited is principally engaged in the development, manufacture and marketing of batteries and battery-related products. Since its establishment under Gold Peak Group in Hong Kong, GP Batteries has rapidly expanded to become one of the world's major suppliers of primary and rechargeable batteries. It is one of the largest consumer battery manufacturers in China. It supplies an extensive range of battery products to original equipment manufacturers, leading battery companies as well as consumer retail markets under its own GP brand name.
@@ -1133,7 +1133,7 @@ GP Batteries' production facilities are located in China, Vietnam and Malaysia, 
     id: 64,
     src: product64,
     altText: 'Slide 64',
-    title: 'VARTA MICROBATTERY',
+    title: 'VARTA',
     description: `
     
 VARTA Microbattery is an internationally leading and globally active manufacturer of retail and OEM batteries and has been operating for more than 125 years. Our customers include the foremost electronics companies, and our range of batteries encompasses all key electrochemical systems, and all shapes and sizes.

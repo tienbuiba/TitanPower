@@ -7,10 +7,10 @@ import product55 from '../../assets/images/product/55.png'
 import product56 from '../../assets/images/product/56.png'
 import product57 from '../../assets/images/product/57.png'
 import product58 from '../../assets/images/product/58.jpeg'
-import product59 from '../../assets/images/product/59.png'
+import product59 from '../../assets/images/product/59.webp'
 import product60 from '../../assets/images/product/60.png'
-import product61 from '../../assets/images/product/61.jpeg'
-import product62 from '../../assets/images/product/62.png'
+import product61 from '../../assets/images/product/61.png'
+import product62 from '../../assets/images/product/62.jpg'
 
 
 
@@ -172,7 +172,7 @@ function MainInterconnectionProduct() {
           <CardActionArea component="a" href={`/product-detail/${product.id}`}>
             <Card >
               <Card sx={{ height: '120px', border: '1px solid #ccc' }}>
-                <div style={{ height: '90px', width: '100%', border: '1px solid #ccc' }}>
+                <div style={{height: '90px', border: '1px solid #ccc' }}>
                   <img
                     style={{ width: '100%', height: '100%', display: 'block', borderBottom: '1px solid #ccc', padding: '8px' }}
                     src={product.src} alt={product.altText}

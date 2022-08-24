@@ -3,27 +3,29 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
-import product28 from '../../assets/images/product/28.jpeg'
+
+import product28 from '../../assets/images/product/28.jpg'
 import product29 from '../../assets/images/product/29.jpeg'
 import product30 from '../../assets/images/product/30.png'
-import product31 from '../../assets/images/product/31.webp'
-import product32 from '../../assets/images/product/32.jpeg'
-import product33 from '../../assets/images/product/33.webp'
+import product31 from '../../assets/images/product/31.png'
+import product32 from '../../assets/images/product/32.png'
+import product33 from '../../assets/images/product/33.jfif'
 import product34 from '../../assets/images/product/34.png'
 import product35 from '../../assets/images/product/35.png'
-import product36 from '../../assets/images/product/36.jpeg'
+import product36 from '../../assets/images/product/36.jfif'
 import product37 from '../../assets/images/product/37.jpeg'
 import product38 from '../../assets/images/product/38.jpeg'
 import product39 from '../../assets/images/product/39.jpeg'
-import product40 from '../../assets/images/product/40.webp'
-import product41 from '../../assets/images/product/41.jpeg'
+import product40 from '../../assets/images/product/40.jpg'
+import product41 from '../../assets/images/product/41.png'
 import product42 from '../../assets/images/product/42.png'
 import product43 from '../../assets/images/product/43.png'
-import product44 from '../../assets/images/product/44.png'
+import product44 from '../../assets/images/product/44.webp'
 import product45 from '../../assets/images/product/45.png'
 import product46 from '../../assets/images/product/46.png'
 import product47 from '../../assets/images/product/47.jpeg'
 import product48 from '../../assets/images/product/48.png'
+
 
 const mainproduct = [
   
@@ -399,7 +401,7 @@ function MainSemiProduct() {
           <CardActionArea component="a" href={`/product-detail/${product.id}`}>
             <Card >
               <Card sx={{ height: '120px', border: '1px solid #ccc' }}>
-                <div style={{ height: '90px', width: '100%', border: '1px solid #ccc' }}>
+                <div style={{ height: '90px',  border: '1px solid #ccc' }}>
                   <img
                     style={{ width: '100%', height: '100%', display: 'block', borderBottom: '1px solid #ccc', padding: '8px' }}
                     src={product.src} alt={product.altText}

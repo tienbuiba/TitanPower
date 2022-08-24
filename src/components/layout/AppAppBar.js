@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
-import { Divider, useMediaQuery, useTheme } from '@mui/material';
+import { Avatar, Divider, useMediaQuery, useTheme } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
@@ -115,25 +115,25 @@ function AppAppBar() {
   );
 
   return (
-    <Toolbar sx={{ p: '0px ' }}
+    <Toolbar
       component="nav"
-      variant="dense">      
-      <Button size="small" href="/" sx={{}}>
-        <img src={Logo} alt="Apollo" width="100%" height="55px" 
+      sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}
+      variant="dense">
+      <Link size="small" href="/" sx={{  height: '55px', width: '55px' }}>
+        <img src={Logo} alt="Apollo" width="100%" height="55px"
           style={{
             opacity: '1',
             transition: 'opacity .4s',
             display: 'block'
           }} />
-      </Button>
-      <Box sx={{ flex: 1, display: { lg: '-webkit-flex', md: 'none', xs: 'none' }, justifyContent: 'flex-end' }}>
+      </Link>
+      <Box sx={{  display: { lg: '-webkit-flex', md: 'none', xs: 'none' }, justifyContent: 'flex-end' }}>
         {sections.map((section, index) => (
           <Link
             sx={{
               color: () => selectedIndex === index ? "#ff3366" : "#000",
               p: 1,
               fontWeight: 500,
-              flexShrink: 0,
               '&:hover': {
                 color: '#ff3366'
               },
@@ -145,7 +145,7 @@ function AppAppBar() {
             noWrap
             key={section.title}
             href={section.url}
-            
+
           >
             {section.title}
           </Link>
@@ -154,12 +154,12 @@ function AppAppBar() {
           <Link href="https://www.facebook.com/Titanpowerstore/" sx={link}  >
             <FacebookIcon sx={{ m: 1 }} size="medium" />
           </Link>
-          <Link href="https://www.facebook.com/Titanpowerstore/" sx={link} >
+          <Link href="https://www.linkedin.com/company/82785234/admin/" sx={link} >
             <LinkedInIcon sx={{ m: 1 }} size="medium" />
           </Link>
         </Box>
       </Box>
-      <Box sx={{ flex: 1, display: { lg: 'none', md: '-webkit-flex', xs: 'flex' }, justifyContent: 'flex-end' }}>
+      <Box sx={{  display: { lg: 'none', md: '-webkit-flex', xs: 'flex' }, justifyContent: 'flex-end' }}>
         <IconButton
           size="large"
           aria-label="menu"
@@ -178,7 +178,7 @@ function AppAppBar() {
           {renderListItem()}
         </Drawer>
       </Box>
-    </Toolbar>
+    </Toolbar >
   );
 }
 

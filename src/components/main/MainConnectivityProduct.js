@@ -3,11 +3,12 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
+
 import product49 from '../../assets/images/product/49.png'
 import product50 from '../../assets/images/product/50.png'
 import product51 from '../../assets/images/product/51.png'
 import product52 from '../../assets/images/product/52.png'
-import product53 from '../../assets/images/product/53.jpeg'
+import product53 from '../../assets/images/product/53.jfif'
 import product54 from '../../assets/images/product/54.png'
 
 const mainproduct = [
@@ -116,7 +117,7 @@ function MainConnectivityProduct() {
           <CardActionArea component="a" href={`/product-detail/${product.id}`}>
             <Card >
               <Card sx={{ height: '120px', border: '1px solid #ccc' }}>
-                <div style={{ height: '90px', width: '100%', border: '1px solid #ccc' }}>
+                <div style={{ height: '90px',  border: '1px solid #ccc' }}>
                   <img
                     style={{ width: '100%', height: '100%', display: 'block', borderBottom: '1px solid #ccc', padding: '8px' }}
                     src={product.src} alt={product.altText}

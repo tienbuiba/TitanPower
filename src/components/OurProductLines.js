@@ -8,11 +8,11 @@ import image3 from '../assets/images/product/13.png'
 import image4 from '../assets/images/product/20.png'
 import image5 from '../assets/images/product/1.png'
 import image6 from '../assets/images/product/48.png'
-import image7 from '../assets/images/product/62.png'
+import image7 from '../assets/images/product/62.jpg'
 import image8 from '../assets/images/product/63.png'
 import image9 from '../assets/images/product/51.png'
 import image10 from '../assets/images/product/52.png'
-import image11 from '../assets/images/product/53.jpeg'
+import image11 from '../assets/images/product/53.jfif'
 import image12 from '../assets/images/product/54.png'
 
 

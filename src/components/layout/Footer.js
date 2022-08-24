@@ -52,8 +52,12 @@ export default function Footer() {
               <a href="https://www.facebook.com/Titanpowerstore/" style={{ color: '#000' }}>
                 <FacebookIcon sx={linkicon} size="small" />
               </a>
+
               <InstagramIcon sx={linkicon} size="small" />
-              <LinkedInIcon sx={linkicon} size="small" />
+              <a href="https://www.linkedin.com/company/82785234/admin/" style={{ color: '#000' }}>
+
+                <LinkedInIcon sx={linkicon} size="small" />
+              </a>
               <TwitterIcon sx={linkicon} size="small" />
             </div>
           </Grid>

@@ -6,7 +6,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import product63 from '../../assets/images/product/63.png'
 import product64 from '../../assets/images/product/64.png'
 import product65 from '../../assets/images/product/65.png'
-import product66 from '../../assets/images/product/66.jpeg'
+import product66 from '../../assets/images/product/66.png'
 
 
 const mainproduct = [
@@ -86,7 +86,7 @@ function MainElectromecProduct() {
           <CardActionArea component="a" href={`/product-detail/${product.id}`}>
             <Card >
               <Card sx={{ height: '120px', border: '1px solid #ccc' }}>
-                <div style={{ height: '90px', width: '100%', border: '1px solid #ccc' }}>
+                <div style={{ height: '90px', border: '1px solid #ccc' }}>
                   <img
                     style={{ width: '100%', height: '100%', display: 'block', borderBottom: '1px solid #ccc', padding: '8px' }}
                     src={product.src} alt={product.altText}

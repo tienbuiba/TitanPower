@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardActionArea from '@mui/material/CardActionArea';
 import product1 from '../../assets/images/product/1.png'
-import product2 from '../../assets/images/product/2.png'
+import product2 from '../../assets/images/product/2.jpg'
 import product3 from '../../assets/images/product/3.png'
 import product4 from '../../assets/images/product/4.jpeg'
 import product5 from '../../assets/images/product/5.jpeg'
@@ -14,22 +14,23 @@ import product8 from '../../assets/images/product/8.jpeg'
 import product9 from '../../assets/images/product/9.png'
 import product10 from '../../assets/images/product/10.png'
 import product11 from '../../assets/images/product/11.jpeg'
-import product12 from '../../assets/images/product/12.jpeg'
+import product12 from '../../assets/images/product/12.jpg'
 import product13 from '../../assets/images/product/13.png'
-import product14 from '../../assets/images/product/14.png'
+import product14 from '../../assets/images/product/14.jpg'
 import product15 from '../../assets/images/product/15.jpeg'
 import product16 from '../../assets/images/product/16.png'
 import product17 from '../../assets/images/product/17.jpeg'
-import product18 from '../../assets/images/product/18.png'
-import product19 from '../../assets/images/product/19.webp'
+import product18 from '../../assets/images/product/18.webp'
+import product19 from '../../assets/images/product/19.jpg'
 import product20 from '../../assets/images/product/20.png'
 import product21 from '../../assets/images/product/21.jpeg'
-import product22 from '../../assets/images/product/22.png'
-import product23 from '../../assets/images/product/23.jpeg'
+import product22 from '../../assets/images/product/22.jpg'
+import product23 from '../../assets/images/product/23.png'
 import product24 from '../../assets/images/product/24.webp'
 import product25 from '../../assets/images/product/25.webp'
 import product26 from '../../assets/images/product/26.png'
 import product27 from '../../assets/images/product/27.png'
+
 
 
 
@@ -518,7 +519,7 @@ function MainPassivesProduct() {
           <CardActionArea component="a" href={`/product-detail/${product.id}`}>
             <Card >
               <Card sx={{ height: '120px', border: '1px solid #ccc' }}>
-                <div style={{ height: '90px', width: '100%', border: '1px solid #ccc' }}>
+                <div style={{ height: '90px',  border: '1px solid #ccc' }}>
                   <img
                     style={{ width: '100%', height: '100%', display: 'block', borderBottom: '1px solid #ccc', padding: '8px' }}
                     src={product.src} alt={product.altText}
